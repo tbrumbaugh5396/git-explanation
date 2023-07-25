@@ -1,5 +1,6 @@
 # Git Explanation\'s Purpose
 [Table of Contents](#Table-of-Contents)
+
 The purpose of this project and repository is to help explain what the tool Git is.
 I will be using this project as a personal Git reference-guide. 
 
@@ -41,6 +42,7 @@ I will be using this project as a personal Git reference-guide.
 
 # Git Introduction
 [Table of Contents](#Table-of-Contents)
+
 From Git's webpage (https://git-scm.com/): "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
 
 In layman's terms, git is a way to update code in iterations like having multiple edit versions of a document (commits), it allows you to save work online (via remote repositories), and it allows you to have version of code (via branches).
@@ -54,15 +56,18 @@ In this document, I will be basing alot off the book "Pro Git".
 
 # Notes on the Book \"Pro Git\"
 [Table of Contents](#Table-of-Contents)
+
 The entire "Pro Git" book by Scott Chacon and Ben Straub is available online at https://git-scm.com/book/en/v2.
 Here I will be recording notes for reference about the book to help myself master git.
 
 ## 1. Getting Started
 [Table of Contents](#Table-of-Contents)
+
 By the end of this chapter, we will understand why Git is around, why you should use it and you should be set up to do so.
 
 ### 1.1 Getting Started - About Version Control
 [Table of Contents](#Table-of-Contents)
+
 A Version Control System records changes to a file or set of files over time so that you can recall specific versions later.
 It is common to version control software and software files.
 Software examples will be used throughout this book.
@@ -146,6 +151,7 @@ https://docs.gitlab.com/ee/topics/gitlab_flow.html
 
 ### 1.2 Getting Started - A Short History of Git
 [Table of Contents](#Table-of-Contents)
+
 Git began when there was a breakdown in communication between BitKeeper and the community that was developing the Linux Kernel.
 The tool switched from being free to use.
 Therefore, the lessons of VCS led to the development of Git with the goals of:
@@ -157,6 +163,7 @@ Therefore, the lessons of VCS led to the development of Git with the goals of:
 
 ### 1.3 Getting Started - What is Git?
 [Table of Contents](#Table-of-Contents)
+
 After this section, you should understand what Git is, how it works, and how to use it effectively.
 
 ##### Snapshots, not differences
@@ -230,11 +237,13 @@ In Git Basics,you'll learn more about the states and how to take advantage or sk
 
 ### 1.4 Getting Started - The Command Line
 [Table of Contents](#Table-of-Contents)
+
 The Git command-line is the only place you can run all Git commands.
 If you understand how to use the command-line version of Git you should be able to use Git GUIs.
 
 ### 1.5 Getting Started - Installing Git
 [Table of Contents](#Table-of-Contents)
+
 Before you can use Git, you must make sure it is available on your computer.
 
 There are different steps to installing Git on Linux, MacOS, Windows, or installing from Source.
@@ -324,6 +333,7 @@ We can see where the variable values come from via:
 
 ### 1.7 Getting Started - Getting Help
 [Table of Contents](#Table-of-Contents)
+
 If you ever need help using Git, there are 3 equivalent ways to get comprehensive manual page (manpage) help for any of the Git commands:
     git help <ver>
     git <verb> --help
@@ -349,8 +359,9 @@ Additionally, if you don't need a full-blown manpage for help but just a quick r
 #### 2. Git Basics
 [Table of Contents](#Table-of-Contents)
 
-#### 2.1 Getting a Git Repository 
+#### 2.1 Git Basics - Getting a Git Repository 
 [Table of Contents](#Table-of-Contents)
+
 This chapters covers every basic command you need to do the vast majority of the things in Git.
 You'll be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. 
 We will show how to set up Git to ignore certain files and file patterns, hwo to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how a push and pull from remote repositories.
@@ -572,6 +583,7 @@ However, this is equivalent to running something like this:
     git add README
 
 #### 2.3 Git Basics - Viewing the Commit History
+[Table of Contents](#Table-of-Contents)
 
 #### Viewing the Commit History
 
@@ -713,6 +725,7 @@ To sum it up, the shell interprets the command line following its own globbing l
 -----------------------------
 
 #### 2.4 Git Basics - Undoing Things
+[Table of Contents](#Table-of-Contents)
 
 ##### undoing Things
 After doing something you may want to undo it. 
@@ -756,6 +769,8 @@ In order to revert any changes to a file to the last commit (or unmodifying a mo
 Note: git restore <file> is dangerous because it undoes any of the local changes to a file.
 
 #### 2.5 Git Basics - Working with Remotes
+[Table of Contents](#Table-of-Contents)
+
 In order to collaborate on Git projects, you need to be able to manage remote repositories.
 Remote repositories are version of your project that are hosted on the internet or somewhere on the network.
 
@@ -846,6 +861,7 @@ or
 Once we delete the reference, all remote-tracking branches and configuration settings associated with that branch are deleted aswell.
 
 #### 2.6 Git Basics - Tagging
+[Table of Contents](#Table-of-Contents)
 
 ##### Tagging
 Tagging is used by Git to tag specific commits in a repository's history.
@@ -932,6 +948,7 @@ If you want to make changes- say you're fixing a bug on an older version, for in
 If you do this and make a commit, your version2 branch will be slightly different than your v2.0.0 tag since it will move forward with your changes, so be careful.
 
 #### 2.7 Git Basics - Git Aliases
+[Table of Contents](#Table-of-Contents)
 
 ##### Git Aliases 
 Git aliases is a feautre in Git that makes our experience simpler, easier, and more familiar.
@@ -963,12 +980,16 @@ For example, we can run gitk using our custom command git visual:
     git config --global alias.visual '!gitk'
 
 #### 2.8 Git Basics - Summary
+[Table of Contents](#Table-of-Contents)
+
 Now we know how to do all the basic local Git operations - creating or cloning a repository, making changes, staging and committing those changes, and viewing the history of all the changes the repository has been through.
 
 Next, we will learn about Git's most killer feature: its branching model.
 
 
 #### 3.1 Git Branching - Branches in a Nutshell
+[Table of Contents](#Table-of-Contents)
+
 Branching means you diverge from the main line of development and continue to do work without messing with that main line.
 In Git, switching back and forth very quickly.
 Git encourages workflows that branch and merge often.
@@ -1047,6 +1068,7 @@ Also, instead of using git checkout <branch-name> you can use git switch <branch
 Also, git switch - will revert to the previous branch.
 
 #### 3.2 Git Branching - Basic Branching and Merging
+[Table of Contents](#Table-of-Contents)
 
 ##### Basic Branching and Merging
 Going through an example of branching and merging with a workflow you might use.
@@ -1159,6 +1181,7 @@ Once, you have verified all the conflicts have been staged, you can type the com
 which will finilize the merge.
 
 #### 3.3 Git Branching - Branch Management
+[Table of Contents](#Table-of-Contents)
 
 ##### Branch Management
 Now that you've created, merged, and deleted some branches, let's look at some branch-management tools that will come in handy when you are using branches all the time.
@@ -1233,6 +1256,7 @@ After you've done all these tasks, and are certain the main branch performs just
     git push origin --delete master
 
 #### 3.4 Git Branching - Branching Workflows
+[Table of Contents](#Table-of-Contents)
 
 ##### Branching Workflows
 Now we have the basics of branching and merging down, that can or should you do with them?
@@ -1264,6 +1288,7 @@ You did a few commits on them and deleted them directly after merging them into 
 
 
 #### 3.5 Git Branching - Remote Branches
+[Table of Contents](#Table-of-Contents)
 
 ##### Remote Branches
 Remote references are references (pointers) in your remote repositories, including branches, tags, and so on. 
@@ -1377,6 +1402,7 @@ Basically all this does is remove the pointer from the server.
 The Git server will generally keep the data there for a while until a garbage collection runs, so if it was accidentally deleted, it's often easy to recover.
 
 #### 3.6 Git Branching - Rebasing
+[Table of Contents](#Table-of-Contents)
 
 ##### Rebasing
 In Git, there are 2 main ways to integrate changes from 1 branch into another: the merge and the rebase.
@@ -1473,13 +1499,18 @@ People with this perspective use tools like rebase and filter-branch to rewrite 
 You can get the best of both worlds by rebasing local changes before pushing to clean up your work, but never rebasing anything that you've pushed somewhere.
 
 #### 3.7 Git Branching - Summary
+[Table of Contents](#Table-of-Contents)
 
 ##### Summary
 Now, we should feel comfortable switching branches, merging local branches together.
 You should be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared.
 Next, we will cover what is needed to run your own Git repository-hosting server.
 
-#### 4.1 Git on the Server - The Protocols
+## 4.1 Git on the Server
+
+### 4.1 Git on the Server - The Protocols
+[Table of Contents](#Table-of-Contents)
+
 Now we know how to do many day-to-day tasks using Git.
 However, inorder to collaborate on Git we will need to have a remote Git repository.
 
@@ -1617,7 +1648,9 @@ Anyone can clone the repo.
 It is also the most difficult protocol to set up because it must be run via its own daemon (which requires xinetd or systemd configuration, firewall access on port 9418).
 
 
-#### 4.2 Git on the Server - Getting Git on a Server
+### 4.2 Git on the Server - Getting Git on a Server
+[Table of Contents](#Table-of-Contents)
+
 In order to initially set up any Git server, you have to export an existing repo into a new bare repository.
 This is straightforward with the command: 
     git clone --bare my_project my_project.git
@@ -1662,163 +1695,168 @@ This doesn't affect the commit data in any way since the SSH user you connect wi
 
 Otherwise, you can use a LDAP server or some authentication source so that users can access the machine.
 
-#### 4.3 Git on the Server - Generating Your SSH Public Key
+### 4.3 Git on the Server - Generating Your SSH Public Key
+[Table of Contents](#Table-of-Contents)
 
+### 4.4 Git on the Server - Setting Up the Server
+[Table of Contents](#Table-of-Contents)
 
-#### 4.4 Git on the Server - Setting Up the Server
+### 4.5 Git on the Server - Git Daemon
+[Table of Contents](#Table-of-Contents)
 
+### 4.6 Git on the Server - Smart HTTP
+[Table of Contents](#Table-of-Contents)
 
-#### 4.5 Git on the Server - Git Daemon
+### 4.7 Git on the Server - GitWeb
+[Table of Contents](#Table-of-Contents)
 
+### 4.8 Git on the Server - GitLab
+[Table of Contents](#Table-of-Contents)
 
-#### 4.6 Git on the Server - Smart HTTP
+### 4.9 Git on the Server - Third Party Hosted Options
+[Table of Contents](#Table-of-Contents)
 
+### 4.10 Git on the Server - Summary
+[Table of Contents](#Table-of-Contents)
 
-#### 4.7 Git on the Server - GitWeb
+## 5 Distributed Git
+[Table of Contents](#Table-of-Contents)
 
+### 5.1 Distributed Git - Distributed Workflows
+[Table of Contents](#Table-of-Contents)
 
-#### 4.8 Git on the Server - GitLab
+### 5.2 Distributed Git - Contributing to a Project
+[Table of Contents](#Table-of-Contents)
 
+### 5.3 Distributed Git - Maintaining a Project
+[Table of Contents](#Table-of-Contents)
 
-#### 4.9 Git on the Server - Third Party Hosted Options
+### 5.4 Distributed Git - Summary
+[Table of Contents](#Table-of-Contents)
 
+### 6.1 GitHub - Account Setup and Configuration
+[Table of Contents](#Table-of-Contents)
 
-#### 4.10 Git on the Server - Summary
+### 6.2 GitHub - Contributing to a Project
+[Table of Contents](#Table-of-Contents)
 
+### 6.3 GitHub - Maintaining a Project
+[Table of Contents](#Table-of-Contents)
 
-#### 5.1 Distributed Git - Distributed Workflows
+### 6.4 GitHub - Managing an organization
+[Table of Contents](#Table-of-Contents)
 
+### 6.5 GitHub - Scripting GitHub
+[Table of Contents](#Table-of-Contents)
 
-#### 5.2 Distributed Git - Contributing to a Project
+### 6.6 GitHub - Summary
+[Table of Contents](#Table-of-Contents)
 
+### 7.1 Git Tools - Revision Selection
+[Table of Contents](#Table-of-Contents)
 
-#### 5.3 Distributed Git - Maintaining a Project
+### 7.2 Git Tools - Interactive Staging
+[Table of Contents](#Table-of-Contents)
 
+### 7.3 Git Tools - Stashing and Cleaning
+[Table of Contents](#Table-of-Contents)
 
-#### 5.4 Distributed Git - Summary
+### 7.4 Git Tools - Signing Your Work
+[Table of Contents](#Table-of-Contents)
 
+### 7.5 Git Tools - Searching
+[Table of Contents](#Table-of-Contents)
 
-#### 6.1 GitHub - Account Setup and Configuration
+### 7.6 Git Tools - Rewriting History
+[Table of Contents](#Table-of-Contents)
 
+### 7.7 Git Tools - Reset Demystified
+[Table of Contents](#Table-of-Contents)
 
-#### 6.2 GitHub - Contributing to a Project
+### 7.8 Git Tools - Advanced Merging
+[Table of Contents](#Table-of-Contents)
 
+### 7.9 Git Tools - Rerere
+[Table of Contents](#Table-of-Contents)
 
-#### 6.3 GitHub - Maintaining a Project
+### 7.10 Git Tools - Debugging with Git
+[Table of Contents](#Table-of-Contents)
 
+### 7.11 Git Tools - Submodules
+[Table of Contents](#Table-of-Contents)
 
-#### 6.4 GitHub - Managing an organization
+### 7.12 Git Tools - Bundling
+[Table of Contents](#Table-of-Contents)
 
+### 7.13 Git Tools - Replace
+[Table of Contents](#Table-of-Contents)
 
-#### 6.5 GitHub - Scripting GitHub
+### 7.14 Git Tools - Credential Storage
+[Table of Contents](#Table-of-Contents)
 
+### 7.15 Git Tools - Summary
+[Table of Contents](#Table-of-Contents)
 
-#### 6.6 GitHub - Summary
+### 8.1 Customizing Git - Git Configuration
+[Table of Contents](#Table-of-Contents)
 
+### 8.2 Customizing Git - Git Attributes
+[Table of Contents](#Table-of-Contents)
 
-#### 7.1 Git Tools - Revision Selection
+### 8.3 Customizing Git - Git Hooks
+[Table of Contents](#Table-of-Contents)
 
+### 8.4 Customizing Git - An Example Git-Enforced Policy
+[Table of Contents](#Table-of-Contents)
 
-#### 7.2 Git Tools - Interactive Staging
+### 8.5 Customizing Git - Summary
+[Table of Contents](#Table-of-Contents)
 
+### 9.1 Git and Other Systems - Git as a Client
+[Table of Contents](#Table-of-Contents)
 
-#### 7.3 Git Tools - Stashing and Cleaning
+### 9.2 Git and Other Systems - Migrating to Git
+[Table of Contents](#Table-of-Contents)
 
+### 9.3 Git and Other Systems - Summary
+[Table of Contents](#Table-of-Contents)
 
-#### 7.4 Git Tools - Signing Your Work
+### 10.1 Git Internals - Plumbing and Porcelain
+[Table of Contents](#Table-of-Contents)
 
+### 10.2 Git Internals - Git Objects
+[Table of Contents](#Table-of-Contents)
 
-#### 7.5 Git Tools - Searching
+### 10.3 Git Internals - Git References
+[Table of Contents](#Table-of-Contents)
 
+### 10.4 Git Internals - Packfiles
+[Table of Contents](#Table-of-Contents)
 
-#### 7.6 Git Tools - Rewriting History
+### 10.5 Git Internals - The Refspec
+[Table of Contents](#Table-of-Contents)
 
+### 10.6 Git Internals - Transfer Protocols
+[Table of Contents](#Table-of-Contents)
 
-#### 7.7 Git Tools - Reset Demystified
+### 10.7 Git Internals - Maintenance and Data Recovery
+[Table of Contents](#Table-of-Contents)
 
+### 10.8 Git Internals - Environment Variables
+[Table of Contents](#Table-of-Contents)
 
-#### 7.8 Git Tools - Advanced Merging
+### 10.9 Git Internals - Summary
+[Table of Contents](#Table-of-Contents)
 
+### A1 Appendix A: Git in Other
+[Table of Contents](#Table-of-Contents)
 
-#### 7.9 Git Tools - Rerere
+### A2 Appendix B: Embedding Git in your Applications
+[Table of Contents](#Table-of-Contents)
 
+### A3 Appendix C: Git Commands
+[Table of Contents](#Table-of-Contents)
 
-#### 7.10 Git Tools - Debugging with Git
-
-
-#### 7.11 Git Tools - Submodules
-
-
-#### 7.12 Git Tools - Bundling
-
-
-#### 7.13 Git Tools - Replace
-
-
-#### 7.14 Git Tools - Credential Storage
-
-
-#### 7.15 Git Tools - Summary
-
-
-#### 8.1 Customizing Git - Git Configuration
-
-
-#### 8.2 Customizing Git - Git Attributes
-
-
-#### 8.3 Customizing Git - Git Hooks
-
-
-#### 8.4 Customizing Git - An Example Git-Enforced Policy
-
-
-#### 8.5 Customizing Git - Summary
-
-
-#### 9.1 Git and Other Systems - Git as a Client
-
-
-#### 9.2 Git and Other Systems - Migrating to Git
-
-
-#### 9.3 Git and Other Systems - Summary
-
-
-#### 10.1 Git Internals - Plumbing and Porcelain
-
-
-#### 10.2 Git Internals - Git Objects
-
-
-#### 10.3 Git Internals - Git References
-
-
-#### 10.4 Git Internals - Packfiles
-
-
-#### 10.5 Git Internals - The Refspec
-
-
-#### 10.6 Git Internals - Transfer Protocols
-
-
-#### 10.7 Git Internals - Maintenance and Data Recovery
-
-
-#### 10.8 Git Internals - Environment Variables
-
-
-#### 10.9 Git Internals - Summary
-
-
-#### A1 Appendix A: Git in Other
-
-
-#### A2 Appendix B: Embedding Git in your Applications
-
-
-#### A3 Appendix C: Git Commands
-
-# References 
+## References 
+[Table of Contents](#Table-of-Contents)
 VCS: Version Control System
