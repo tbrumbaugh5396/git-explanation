@@ -8,7 +8,7 @@ I will be using this project as a personal Git reference-guide.
 * [Table of Contents](#Table-of-Contents)
 * [Git Introduction](#Git-Introduction)
 * [Notes on the Book \"Pro Git\"](#Notes-on-the-Book-Pro-Git)
-  * [1. Getting Started](#1.-Getting-Started) 
+  * [1. Getting Started](#1-Getting-Started) 
 * [Software Description](#Software-Description)
   * [Software Version](#Software-Version) 
   * [Github Repo](#Github-Repo)
