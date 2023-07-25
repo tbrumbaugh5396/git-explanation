@@ -5,6 +5,7 @@ I will be using this project as a personal Git reference-guide.
 # Table of Contents
 * [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
 * [Table of Contents](#Table-of-Contents)
+* [Git Introduction](#Git-Introduction)
 * [Software Description](#Software-Description)
   * [Software Version](#Software-Version) 
   * [Github Repo](#Github-Repo)
@@ -21,6 +22,7 @@ I will be using this project as a personal Git reference-guide.
 * [A news section (usually aimed at end users)](#A-news-section)
 * [FAQ](#FAQ) 
 * [TODO](#TODO)
+* [Reference\'s](#References)
 
 # Git Introduction
 From Git's webpage (https://git-scm.com/): "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
@@ -1788,3 +1790,5 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 
 #### A3 Appendix C: Git Commands
 
+# References 
+VCS: Version Control System
