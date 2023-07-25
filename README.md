@@ -243,7 +243,7 @@ If you understand how to use the command-line version of Git you should be able 
 
 ### 1.5 Getting Started - Installing Git
 [Table of Contents](#Table-of-Contents)
-
+Table of Conte
 Before you can use Git, you must make sure it is available on your computer.
 
 There are different steps to installing Git on Linux, MacOS, Windows, or installing from Source.
@@ -356,10 +356,10 @@ Additionally, if you don't need a full-blown manpage for help but just a quick r
 ### 1. My Notes
 [Table of Contents](#Table-of-Contents)
 
-#### 2. Git Basics
+### 2. Git Basics
 [Table of Contents](#Table-of-Contents)
 
-#### 2.1 Git Basics - Getting a Git Repository 
+### 2.1 Git Basics - Getting a Git Repository 
 [Table of Contents](#Table-of-Contents)
 
 This chapters covers every basic command you need to do the vast majority of the things in Git.
@@ -411,7 +411,7 @@ Begin tracking and added files to staging using the command:
 Commit the tracked files using the command:
     git commit -m "Initial commit"
 
-#### 2.2 Git Basics - Recording Changes to the Repository
+### 2.2 Git Basics - Recording Changes to the Repository
 [Table of Contents](#Table-of-Contents)
 
 #### Recording Changes to the Repository
@@ -582,7 +582,7 @@ However, this is equivalent to running something like this:
     git rm README.md
     git add README
 
-#### 2.3 Git Basics - Viewing the Commit History
+### 2.3 Git Basics - Viewing the Commit History
 [Table of Contents](#Table-of-Contents)
 
 #### Viewing the Commit History
@@ -724,7 +724,7 @@ To sum it up, the shell interprets the command line following its own globbing l
 
 -----------------------------
 
-#### 2.4 Git Basics - Undoing Things
+### 2.4 Git Basics - Undoing Things
 [Table of Contents](#Table-of-Contents)
 
 ##### undoing Things
@@ -768,7 +768,7 @@ In order to revert any changes to a file to the last commit (or unmodifying a mo
 
 Note: git restore <file> is dangerous because it undoes any of the local changes to a file.
 
-#### 2.5 Git Basics - Working with Remotes
+### 2.5 Git Basics - Working with Remotes
 [Table of Contents](#Table-of-Contents)
 
 In order to collaborate on Git projects, you need to be able to manage remote repositories.
@@ -860,7 +860,7 @@ or
 
 Once we delete the reference, all remote-tracking branches and configuration settings associated with that branch are deleted aswell.
 
-#### 2.6 Git Basics - Tagging
+### 2.6 Git Basics - Tagging
 [Table of Contents](#Table-of-Contents)
 
 ##### Tagging
@@ -947,7 +947,7 @@ If you want to make changes- say you're fixing a bug on an older version, for in
 
 If you do this and make a commit, your version2 branch will be slightly different than your v2.0.0 tag since it will move forward with your changes, so be careful.
 
-#### 2.7 Git Basics - Git Aliases
+### 2.7 Git Basics - Git Aliases
 [Table of Contents](#Table-of-Contents)
 
 ##### Git Aliases 
@@ -979,7 +979,7 @@ This is useful if you write your own tools that work with a Git repository.
 For example, we can run gitk using our custom command git visual:
     git config --global alias.visual '!gitk'
 
-#### 2.8 Git Basics - Summary
+### 2.8 Git Basics - Summary
 [Table of Contents](#Table-of-Contents)
 
 Now we know how to do all the basic local Git operations - creating or cloning a repository, making changes, staging and committing those changes, and viewing the history of all the changes the repository has been through.
@@ -987,7 +987,7 @@ Now we know how to do all the basic local Git operations - creating or cloning a
 Next, we will learn about Git's most killer feature: its branching model.
 
 
-#### 3.1 Git Branching - Branches in a Nutshell
+### 3.1 Git Branching - Branches in a Nutshell
 [Table of Contents](#Table-of-Contents)
 
 Branching means you diverge from the main line of development and continue to do work without messing with that main line.
@@ -1067,7 +1067,7 @@ Also, becasue we're recording the p[arents when we commit, finding a proper merg
 Also, instead of using git checkout <branch-name> you can use git switch <branch-name> or git switch -c <branch-name> (git switch --create <branch-name>) which will create a new branch and switch to it.
 Also, git switch - will revert to the previous branch.
 
-#### 3.2 Git Branching - Basic Branching and Merging
+### 3.2 Git Branching - Basic Branching and Merging
 [Table of Contents](#Table-of-Contents)
 
 ##### Basic Branching and Merging
@@ -1180,7 +1180,7 @@ Once, you have verified all the conflicts have been staged, you can type the com
     git commit
 which will finilize the merge.
 
-#### 3.3 Git Branching - Branch Management
+### 3.3 Git Branching - Branch Management
 [Table of Contents](#Table-of-Contents)
 
 ##### Branch Management
@@ -1255,7 +1255,7 @@ Now you have a few more tasks in front of you to complete the transition:
 After you've done all these tasks, and are certain the main branch performs just as the master branch, you can delete the master branch:
     git push origin --delete master
 
-#### 3.4 Git Branching - Branching Workflows
+### 3.4 Git Branching - Branching Workflows
 [Table of Contents](#Table-of-Contents)
 
 ##### Branching Workflows
@@ -1287,7 +1287,7 @@ A topic branch is a short-lived branch that you create and use for a single part
 You did a few commits on them and deleted them directly after merging them into your main branch.
 
 
-#### 3.5 Git Branching - Remote Branches
+### 3.5 Git Branching - Remote Branches
 [Table of Contents](#Table-of-Contents)
 
 ##### Remote Branches
@@ -1401,7 +1401,7 @@ If you want to delete your serverfix branch from the server, you run the followi
 Basically all this does is remove the pointer from the server.
 The Git server will generally keep the data there for a while until a garbage collection runs, so if it was accidentally deleted, it's often easy to recover.
 
-#### 3.6 Git Branching - Rebasing
+### 3.6 Git Branching - Rebasing
 [Table of Contents](#Table-of-Contents)
 
 ##### Rebasing
@@ -1498,7 +1498,7 @@ People with this perspective use tools like rebase and filter-branch to rewrite 
 
 You can get the best of both worlds by rebasing local changes before pushing to clean up your work, but never rebasing anything that you've pushed somewhere.
 
-#### 3.7 Git Branching - Summary
+### 3.7 Git Branching - Summary
 [Table of Contents](#Table-of-Contents)
 
 ##### Summary
