@@ -6,6 +6,7 @@ I will be using this project as a personal Git reference-guide.
 * [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
 * [Table of Contents](#Table-of-Contents)
 * [Git Introduction](#Git-Introduction)
+* [Notes on the Book \"Pro Git\"](#Notes-on-the-Book-Pro-Git)
 * [Software Description](#Software-Description)
   * [Software Version](#Software-Version) 
   * [Github Repo](#Github-Repo)
@@ -26,6 +27,7 @@ I will be using this project as a personal Git reference-guide.
 
 # Git Introduction
 From Git's webpage (https://git-scm.com/): "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
+
 In layman's terms, git is a way to update code in iterations like having multiple edit versions of a document (commits), it allows you to save work online (via remote repositories), and it allows you to have version of code (via branches).
 On reddit user said, "Git: A way for multiple to work on and save isolated copies of a single project without constantly overwriting each other's stuff."
 
@@ -33,16 +35,13 @@ Git is a Version Control System (VCS).
 It is a software system that allows you to control different versions of text documents that you are working on and is commonly used to manage software. 
 It is distibuted so you can collaborate across different computer system in addition to working locally on your own computer.
 
-In this document, I am going to fully flesh out the developments of git.
+In this document, I will be basing alot off the book "Pro Git".
 
-## Notes on the Git Book
-On Git's webpage: https://git-scm.com/book/en/v2, there is a book called "Pro Git".
+# Notes on the Book \"Pro Git\"
+The entire "Pro Git" book by Scott Chacon and Ben Straub is available online at https://git-scm.com/book/en/v2.
 Here I will be recording notes for reference about the book to help myself master git.
 
-### About the book
-The entire "Pro Git" book by Scott Chacon and Ben Straub is available online at https://git-scm.com/book/en/v2.
-
-### 1. Getting Started
+## 1. Getting Started
 By the end of this chapter, we will understand why Git is around, why you should use it and you should be set up to do so.
 
 #### 1.1 About Version Control
