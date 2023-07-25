@@ -144,7 +144,7 @@ This allows new types of workflows that aren't possible in centralized systems, 
 ##### Workflows
 https://docs.gitlab.com/ee/topics/gitlab_flow.html
 
-#### 1.2 A Short History of Git
+### 1.2 Getting Started - A Short History of Git
 [Table of Contents](#Table-of-Contents)
 Git began when there was a breakdown in communication between BitKeeper and the community that was developing the Linux Kernel.
 The tool switched from being free to use.
@@ -155,7 +155,7 @@ Therefore, the lessons of VCS led to the development of Git with the goals of:
 - Fully distributed
 - Capable to handle large projects like the Linux kernel efficiently (speed and data size)
 
-#### 1.3 What is Git?
+### 1.3 Getting Started - What is Git?
 [Table of Contents](#Table-of-Contents)
 After this section, you should understand what Git is, how it works, and how to use it effectively.
 
@@ -228,12 +228,12 @@ If it has been changed since it was checked out but has not been staged, it is m
 In Git Basics,you'll learn more about the states and how to take advantage or skip them.
 
 
-#### 1.4 The Command Line
+### 1.4 Getting Started - The Command Line
 [Table of Contents](#Table-of-Contents)
 The Git command-line is the only place you can run all Git commands.
 If you understand how to use the command-line version of Git you should be able to use Git GUIs.
 
-#### 1.5 Installing Git
+### 1.5 Getting Started - Installing Git
 [Table of Contents](#Table-of-Contents)
 Before you can use Git, you must make sure it is available on your computer.
 
@@ -243,7 +243,7 @@ Personally, I have been using NixOS.
 In order to install Git to NixOS,  add Git to /etc/nixos/configuration.nix git to the line:
     environment.systemPackages = with pkgs; [git];
 
-#### 1.6 First-Time Git setup
+### 1.6 Getting Started - First-Time Git setup
 [Table of Contents](#Table-of-Contents)
 
 ##### First-Time Git Setup
@@ -322,7 +322,7 @@ You can also check what Git thinks a specific key's value is by typing git confi
 We can see where the variable values come from via:
     git config --show-origin user.name
 
-#### 1.7 Getting Help
+### 1.7 Getting Started - Getting Help
 [Table of Contents](#Table-of-Contents)
 If you ever need help using Git, there are 3 equivalent ways to get comprehensive manual page (manpage) help for any of the Git commands:
     git help <ver>
@@ -340,8 +340,10 @@ There are different online channels like #git, #github, or #gitlab channels on L
 Additionally, if you don't need a full-blown manpage for help but just a quick refresher on the available options for a Git command use the more concise "help" option with the -h option:
     git add -h
 
-#### 1.8 Summary
+### 1.8 Getting Started - Summary
 [Table of Contents](#Table-of-Contents)
+
+### 1. My Notes
 
 #### 2. Git Basics
 [Table of Contents](#Table-of-Contents)
