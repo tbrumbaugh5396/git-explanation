@@ -3,7 +3,7 @@ The purpose of this project and repository is to help explain what the tool Git 
 I will be using this project as a personal Git reference-guide. 
 
 # Table of Contents
-* [Git Explanation\'s Purpose](#Git-Explanation\'s-Purpose)
+* [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
 * [Table of Contents](#Table-of-Contents)
 * [Software Description](#Software-Description)
   * [Software Version](#Software-Version) 
