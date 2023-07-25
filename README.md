@@ -11,7 +11,7 @@ I will be using this project as a personal Git reference-guide.
   * [1. Getting Started](#1-Getting-Started)
     * [1.1 About Version Control](#11-Getting-Started---About-Version-Control)
     * [1.2 A Short History of Git](#12-Getting-Started---A-Short-History-of-Git)
-    * [1.3 What is Git?](#13-Getting-Started---What-is-Git?)
+    * [1.3 What is Git?](#13-Getting-Started---What-is-Git)
     * [1.4 The Command Line](#14-Getting-Started---The-Command-Line)
     * [1.5 Installing Git](#15-Getting-Started---Installing-Git)
     * [1.6 First-Time Git Setup](#16-Getting-Started---First-Time-Git-Setup)
@@ -344,6 +344,7 @@ Additionally, if you don't need a full-blown manpage for help but just a quick r
 [Table of Contents](#Table-of-Contents)
 
 ### 1. My Notes
+[Table of Contents](#Table-of-Contents)
 
 #### 2. Git Basics
 [Table of Contents](#Table-of-Contents)
