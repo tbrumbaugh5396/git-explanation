@@ -1,4 +1,4 @@
-# Git Explaination's Purpose
+# Git Explaination\'s Purpose
 The purpose of this project and repository is to help explain what the tool Git is.
 I will be using this project as a personal Git reference-guide. 
 
