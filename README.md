@@ -15,7 +15,7 @@ I will be using this project as a personal Git reference-guide.
     * [1.4 The Command Line](#14-Getting-Started---The-Command-Line)
     * [1.5 Installing Git](#15-Getting-Started---Installing-Git)
     * [1.6 First-Time Git Setup](#16-Getting-Started---First-Time-Git-Setup)
-    * [1.7 Getting Help](#17-Getting-Started---About-Version-Control)
+    * [1.7 Getting Help](#17-Getting-Started---Getting-Help)
     * [1.8 Summary](#18-Getting-Started---Summary)
     * [1. My Notes](#1-My-Notes)
   * [2. Git Basics](#2-Git-Basics)
