@@ -1,6 +1,26 @@
-# Git Explaination\'s Purpose
+# Git Explanation\'s Purpose
 The purpose of this project and repository is to help explain what the tool Git is.
 I will be using this project as a personal Git reference-guide. 
+
+# Table of Contents
+* [Git Explanation\'s Purpose](#Git-Explanation\'s-Purpose)
+* [Table of Contents](#Table-of-Contents)
+* [Software Description](#Software-Description)
+  * [Software Version](#Software-Version) 
+  * [Github Repo](#Github-Repo)
+* [Configuration instructions](#Configuration-instructions)
+* [Installation instructions](#Installation-instructions)
+* [Operating instructions](#Operating-instructions)
+* [A file manifest](#A-file-manifest)
+* [Copyright and licensing information](#Copyright-and-licensing-information)
+* [Contact information for the distributor or author](#Contact-information-for-the-distributor-or-author)
+* [A list of known bugs](#A-list-of-known-bugs)
+* [Troubleshooting instructions](#Troubleshooting-instructions)
+* [Credits and acknowledgments](#Credits-and-acknowledgments)
+* [A changelog (usually aimed at fellow programmers)](#A-changelog)
+* [A news section (usually aimed at end users)](#A-news-section)
+* [FAQ](#FAQ) 
+* [TODO](#TODO)
 
 # Git Introduction
 From Git's webpage (https://git-scm.com/): "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
