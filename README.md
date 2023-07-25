@@ -9,7 +9,7 @@ I will be using this project as a personal Git reference-guide.
 * [Git Introduction](#Git-Introduction)
 * [Notes on the Book \"Pro Git\"](#Notes-on-the-Book-Pro-Git)
   * [1. Getting Started](#1-Getting-Started)
-    * [1.1 About Version Control](#11-About-Version-Control)
+    * [1.1 About Version Control](#11-Getting-Started-About-Version-Control)
   * [2. Git Basics](#2-Git-Basics)
   * [3. Git Branching](#3-Git-Branching)
   * [4. Git on the Server](#4-Git-on-the-Server)
