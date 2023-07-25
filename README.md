@@ -1,4 +1,5 @@
 # Git Explanation\'s Purpose
+[Table of Contents](#Table-of-Contents)
 The purpose of this project and repository is to help explain what the tool Git is.
 I will be using this project as a personal Git reference-guide. 
 
@@ -7,6 +8,7 @@ I will be using this project as a personal Git reference-guide.
 * [Table of Contents](#Table-of-Contents)
 * [Git Introduction](#Git-Introduction)
 * [Notes on the Book \"Pro Git\"](#Notes-on-the-Book-Pro-Git)
+  * [1. Getting Started](#1.-Getting-Started) 
 * [Software Description](#Software-Description)
   * [Software Version](#Software-Version) 
   * [Github Repo](#Github-Repo)
@@ -26,6 +28,7 @@ I will be using this project as a personal Git reference-guide.
 * [Reference\'s](#References)
 
 # Git Introduction
+[Table of Contents](#Table-of-Contents)
 From Git's webpage (https://git-scm.com/): "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
 
 In layman's terms, git is a way to update code in iterations like having multiple edit versions of a document (commits), it allows you to save work online (via remote repositories), and it allows you to have version of code (via branches).
@@ -38,13 +41,16 @@ It is distibuted so you can collaborate across different computer system in addi
 In this document, I will be basing alot off the book "Pro Git".
 
 # Notes on the Book \"Pro Git\"
+[Table of Contents](#Table-of-Contents)
 The entire "Pro Git" book by Scott Chacon and Ben Straub is available online at https://git-scm.com/book/en/v2.
 Here I will be recording notes for reference about the book to help myself master git.
 
 ## 1. Getting Started
+[Table of Contents](#Table-of-Contents)
 By the end of this chapter, we will understand why Git is around, why you should use it and you should be set up to do so.
 
-#### 1.1 About Version Control
+### 1.1 Getting Started - About Version Control
+[Table of Contents](#Table-of-Contents)
 A Version Control System records changes to a file or set of files over time so that you can recall specific versions later.
 It is common to version control software and software files.
 Software examples will be used throughout this book.
@@ -127,6 +133,7 @@ This allows new types of workflows that aren't possible in centralized systems, 
 https://docs.gitlab.com/ee/topics/gitlab_flow.html
 
 #### 1.2 A Short History of Git
+[Table of Contents](#Table-of-Contents)
 Git began when there was a breakdown in communication between BitKeeper and the community that was developing the Linux Kernel.
 The tool switched from being free to use.
 Therefore, the lessons of VCS led to the development of Git with the goals of:
@@ -137,6 +144,7 @@ Therefore, the lessons of VCS led to the development of Git with the goals of:
 - Capable to handle large projects like the Linux kernel efficiently (speed and data size)
 
 #### 1.3 What is Git?
+[Table of Contents](#Table-of-Contents)
 After this section, you should understand what Git is, how it works, and how to use it effectively.
 
 ##### Snapshots, not differences
@@ -209,10 +217,12 @@ In Git Basics,you'll learn more about the states and how to take advantage or sk
 
 
 #### 1.4 The Command Line
+[Table of Contents](#Table-of-Contents)
 The Git command-line is the only place you can run all Git commands.
 If you understand how to use the command-line version of Git you should be able to use Git GUIs.
 
 #### 1.5 Installing Git
+[Table of Contents](#Table-of-Contents)
 Before you can use Git, you must make sure it is available on your computer.
 
 There are different steps to installing Git on Linux, MacOS, Windows, or installing from Source.
@@ -222,6 +232,7 @@ In order to install Git to NixOS,  add Git to /etc/nixos/configuration.nix git t
     environment.systemPackages = with pkgs; [git];
 
 #### 1.6 First-Time Git setup
+[Table of Contents](#Table-of-Contents)
 
 ##### First-Time Git Setup
 When we first add Git to our system, we should customize our Git environment.
@@ -300,6 +311,7 @@ We can see where the variable values come from via:
     git config --show-origin user.name
 
 #### 1.7 Getting Help
+[Table of Contents](#Table-of-Contents)
 If you ever need help using Git, there are 3 equivalent ways to get comprehensive manual page (manpage) help for any of the Git commands:
     git help <ver>
     git <verb> --help
@@ -317,10 +329,13 @@ Additionally, if you don't need a full-blown manpage for help but just a quick r
     git add -h
 
 #### 1.8 Summary
+[Table of Contents](#Table-of-Contents)
 
 #### 2. Git Basics
+[Table of Contents](#Table-of-Contents)
 
 #### 2.1 Getting a Git Repository 
+[Table of Contents](#Table-of-Contents)
 This chapters covers every basic command you need to do the vast majority of the things in Git.
 You'll be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. 
 We will show how to set up Git to ignore certain files and file patterns, hwo to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how a push and pull from remote repositories.
@@ -371,6 +386,7 @@ Commit the tracked files using the command:
     git commit -m "Initial commit"
 
 #### 2.2 Git Basics - Recording Changes to the Repository
+[Table of Contents](#Table-of-Contents)
 
 #### Recording Changes to the Repository
 Each file in your working directory can be in 1 of 2 states:
