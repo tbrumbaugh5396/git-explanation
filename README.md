@@ -19,7 +19,7 @@ I will be using this project as a personal Git reference-guide.
     * [1.7 Getting Help](#17-Getting-Started---Getting-Help)
     * [1.8 Summary](#18-Getting-Started---Summary)
     * [1. My Notes](#1-My-Notes)
-  * [2. Git Basics]
+  * [2. Git Basics](#1-Getting-Started)
     * [2.1 Getting a Git Repository]
     * [2.2 Recording Changes to the Repository]
     * [2.3 Viewing the Commit History]
@@ -28,6 +28,7 @@ I will be using this project as a personal Git reference-guide.
     * [2.6 Tagging]
     * [2.7 Git Aliases]
     * [2.8 Summary]
+    * [2. My Notes](#2-My-Notes)
   * [3. Git Branching]
     * [3.1 Branches in a Nutshell]
     * [3.2 Basic Branching and Merging]
@@ -36,6 +37,7 @@ I will be using this project as a personal Git reference-guide.
     * [3.5 Remote Branches]
     * [3.6 Rebasing]
     * [3.7 Summary]
+    * [2. My Notes](#2-My-Notes)
   * [4. Git on the Server]
     * [4.1 The Protocols]
     * [4.2 Getting Git on a Server]
@@ -47,11 +49,13 @@ I will be using this project as a personal Git reference-guide.
     * [4.8 GitLab]
     * [4.9 Third Party Hosted Options]
     * [4.10 Summary]
+    * [2. My Notes](#2-My-Notes)
   * [5. Distributed Git]
     * [5.1 Distributed Workflows]
     * [5.2 Contributing to a Project]
     * [5.3 Maintaining a Project]
     * [5.4 Summary]
+    * [2. My Notes](#2-My-Notes)
   * [6. GitHub]
     * [6.1 Account Setup and Configuration]
     * [6.2 Contributing to a Project]
@@ -59,8 +63,8 @@ I will be using this project as a personal Git reference-guide.
     * [6.4 Managing an organization]
     * [6.5 Scripting GitHub]
     * [6.6 Summary]
+    * [2. My Notes](#2-My-Notes)
   * [7. Git Tools]
-
     * [7.1 Revision Selection]
     * [7.2 Interactive Staging]
     * [7.3 Stashing and Cleaning]
@@ -76,31 +80,30 @@ I will be using this project as a personal Git reference-guide.
     * [7.13 Replace]
     * [7.14 Credential Storage]
     * [7.15 Summary]
-
+    * [2. My Notes](#2-My-Notes)
   * [8. Customizing Git]
     * [8.1 Git Configuration]
     * [8.2 Git Attributes]
     * [8.3 Git Hooks]
     * [8.4 An Example Git-Enforced Policy]
     * [8.5 Summary]
-
+    * [2. My Notes](#2-My-Notes)
   * [9. Git and Other Systems]
-
     * [9.1 Git as a Client]
     * [9.2 Migrating to Git]
     * [9.3 Summary]
-
+    * [2. My Notes](#2-My-Notes)
   * [10. Git Internals]
-
     * [10.1 Plumbing and Porcelain]
     * [10.2 Git Objects]
     * [10.3 Git References]
     * [10.4 Packfiles]
     * [10.5 The Refspec]
     * [10.6 Transfer Protocols]
-    * [10.7 Maintenance and Data Recovery]
+    * [10.7 Maintenance and Data Recover]
     * [10.8 Environment Variables]
     * [10.9 Summary]
+    * [2. My Notes](#2-My-Notes)
   * [Appendix]
     * [A1. Appendix A: Git in Other Environments]
       * [A1.1 Graphical Interfaces]
@@ -131,26 +134,8 @@ I will be using this project as a personal Git reference-guide.
       * [A3.10 External Systems]
       * [A3.11 Administration]
       * [A3.12 Plumbing Commands]
-
-
-
-
-* [Software Description](#Software-Description)
-  * [Software Version](#Software-Version) 
-  * [Github Repo](#Github-Repo)
-* [Configuration instructions](#Configuration-instructions)
-* [Installation instructions](#Installation-instructions)
-* [Operating instructions](#Operating-instructions)
-* [A file manifest](#A-file-manifest)
-* [Copyright and licensing information](#Copyright-and-licensing-information)
-* [Contact information for the distributor or author](#Contact-information-for-the-distributor-or-author)
-* [A list of known bugs](#A-list-of-known-bugs)
-* [Troubleshooting instructions](#Troubleshooting-instructions)
-* [Credits and acknowledgments](#Credits-and-acknowledgments)
-* [A changelog (usually aimed at fellow programmers)](#A-changelog)
-* [A news section (usually aimed at end users)](#A-news-section)
-* [FAQ](#FAQ) 
-* [TODO](#TODO)
+     
+  * [2. My Notes](#2-My-Notes)
 * [Reference\'s](#References)
 
 # Git Introduction
