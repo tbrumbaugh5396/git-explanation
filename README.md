@@ -1,11 +1,13 @@
-# Git Explaination
+# Git Explaination's Purpose
+The purpose of this project and repository is to help explain what the tool Git is.
+I will be using this project as a personal Git reference-guide. 
 
 # Git Introduction
-From Git's webpage: https://git-scm.com/, "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
+From Git's webpage (https://git-scm.com/): "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
 In layman's terms, git is a way to update code in iterations like having multiple edit versions of a document (commits), it allows you to save work online (via remote repositories), and it allows you to have version of code (via branches).
 On reddit user said, "Git: A way for multiple to work on and save isolated copies of a single project without constantly overwriting each other's stuff."
 
-Git is a Version Control System or VCS. 
+Git is a Version Control System (VCS). 
 It is a software system that allows you to control different versions of text documents that you are working on and is commonly used to manage software. 
 It is distibuted so you can collaborate across different computer system in addition to working locally on your own computer.
 
