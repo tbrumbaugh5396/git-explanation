@@ -240,19 +240,19 @@ Thus, each node is a fully redundent repository.
 
 ```mermaid
 graph LR;
-A[File On Computer A] --> B(Computer A Version 1);
-A --> C(Computer A Version 2);
-A --> D(Computer A Version 3);
+    A[File On Computer A] --> B(Computer A Version 1);
+    A --> C(Computer A Version 2);
+    A --> D(Computer A Version 3);
+    
+    E[File On Computer B] --> F(Computer B Version 1);
+    E --> G(Computer B Version 2);
+    E --> H(Computer B Version 3);
+    
+    I(Server Computer Version 1);
+    I --> J(Server Computer Version 2);
+    I --> K(Server Computer Version 3);
 
-E[File On Computer B] --> F(Computer B Version 1);
-E --> G(Computer B Version 2);
-E --> H(Computer B Version 3);
-
-I(Server Computer Version 1);
-I --> J(Server Computer Version 2);
-I --> K(Server Computer Version 3);
-
-A -- E -- I;
+    A --> E --> I;
 ```
 
 Many of these systems deal well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project.
