@@ -1170,12 +1170,12 @@ A shortened version: git status --short or git status -s
 Example:
   git status -s
 
-  Output:
-    M  README
-    MM Rakefile
-    A  lib/git.rb
-    M  lib/simplegit.rb
-    ?? LICENSE.txt
+Output:
+- M  README
+- MM Rakefile
+- A  lib/git.rb
+- M  lib/simplegit.rb
+- ?? LICENSE.txt
 
 | staging area | modified | filename         | action |
 |--------------|----------|------------------|--------|
