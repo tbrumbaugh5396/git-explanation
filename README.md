@@ -196,11 +196,11 @@ And this will produce a flow chart:
 
 ```mermaid
 graph TD;
-    A--B;
-    A--C;
-    A--D;
-    B--C
-    C--D;
+    A-->B;
+    A-->C;
+    A-->D;
+    B-->C
+    C-->D;
 ```
 
 ```mermaid
