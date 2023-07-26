@@ -1169,11 +1169,14 @@ A shortened version: git status --short or git status -s
 
 Example:
   git status -s
-    M README             # the file README has been modified and added to the staging area
-    MM Rakefile          # the file Rakefile has been modified and added to the staging area then modified again (the left and right columns, respectively)
-    A  lib/git.rb        # the file lib/git.rb has been added to the staging area after no being previously tracked
-    M  lib/simplegit.rb  # the file lib/simplegit.rb has been modified and added to the staging area
-    ?? LICENSE.txt       # the file LICENSE.txt is untracked
+
+| staging area | modified | filename         | action |
+|--------------|----------|------------------|--------|
+| M            |          | README           | the file README has been modified and added to the staging area |
+| M            | M        | Rakefile         | the file Rakefile has been modified and added to the staging area then modified again (the left and right columns, respectively) |
+| A            |          | lib/git.rb       | the file lib/git.rb has been added to the staging area after no being previously tracked |
+| M            |          | lib/simplegit.rb | the file lib/simplegit.rb has been modified and added to the staging area |
+| ?            | ?        | LICENSE.txt      | the file LICENSE.txt is untracked |
 
 We can ignore a class of files automatically by adding the file listing patterns into the file .gitignore inside our git repository.
 This specificies which untracked files you want to ignore. (Yes, if .gitignore is untracked you can add .gitignore to .gitignore and it will be excluded from Git's messaging)
