@@ -1202,7 +1202,8 @@ The options for pretty are:
   - full
   - fuller
   - format, which as more indepth options.
-In software development, a README file contains information about the other files in a directory or archive of computer software. 
+In software development, a README file contains information about the other files in a directory or archive of computer software.
+
 | Specifier | Description of Output                           |
 |-----------|-------------------------------------------------|
 | %H        | Commit hash                                     |
