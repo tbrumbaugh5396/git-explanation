@@ -358,6 +358,7 @@ These values can be changed at anytime by re-running these commands.
 Git comes with a tool called "git config" that lets you get and set configuration variables that control how Git looks and operations.
 
 These variables can be stored in 3 different places:
+    
     1. [path]/etc/gitconfig file: Contains values applied to every user on the system and all their repositories. 
     This is the file that is editted when you add the --system to git config.
     Since this is a system configuration file, you would need administrative or superuser privledge to make changes to it.
