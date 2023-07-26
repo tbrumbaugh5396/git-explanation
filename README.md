@@ -496,14 +496,14 @@ This chapters covers every basic command you need to do the vast majority of the
 You'll be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. 
 We will show how to set up Git to ignore certain files and file patterns, hwo to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how a push and pull from remote repositories.
 
-##### Getting a Git Repository
+#### Getting a Git Repository
 There are 2 ways to get a Git repository:
 1. You can take a local directory that is currently not under version control, and turn it into a Git repository.
 2. You can clone an existing Git repository from elsewhere like another server.
 
 In either case, you end up with a Git repository on your local machine, ready for work.
 
-##### Initializing a Repository in an Existing Directory
+#### Initializing a Repository in an Existing Directory
 If you have a project directory that is not under version control and you want to control it with Git, you need to navigate into a project's directory.
 
 For Linux go to the project:
@@ -515,7 +515,7 @@ Then turn this project (and folder) into a Git repository (when Git is already i
 This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton.
 At this point, nothing in your project is tracked yet.
 
-##### Cloning an existing repository
+#### Cloning an existing repository
 The other way to get an existing repository is cloning a repository.
 
 It is not simply checking out a file but copying everything about the repository including the history of the project.
@@ -533,7 +533,7 @@ We can also specify our projects name by adding that after the url:
 There are different transfer protocols that can be used.
 The previous examples used https:// protocol but we can also use git:// or user@server:path/to/repo.git which use the SSH transfer protocol.
 
-##### Begin tracking files and do an initial commit
+#### Begin tracking files and do an initial commit
 Begin tracking and added files to staging using the command:
     git add *.c
     git add LICENSE
@@ -555,7 +555,7 @@ Tracked files (relative to a commit) can be either:
     - modified (different than the last snapshot)
     - staged (files prepared to be commited)
 
-Untracked files are everything else - any files in your working directory that were not in your ast snapshot and not in your staging area.
+Untracked files are everything else - any files in your working directory that were not in your last snapshot and not in your staging area.
 
 When you first clone a repository, all of your files will be tracked and unmodified because Git checked them out and haven't edited anything.
 
@@ -715,9 +715,7 @@ However, this is equivalent to running something like this:
 ### 2.3 Git Basics - Viewing the Commit History
 [Table of Contents](#Table-of-Contents)
 
-#### Viewing the Commit History
-
-### git log
+#### git log
 You may want to look at the commit history of a repository, run:
     git log
 
@@ -746,14 +744,14 @@ Here are the different format options:
 These examples use a very simple project called “simplegit”. To get the project, run:
     git clone https://github.com/schacon/simplegit-progit
 
-##### git log --patch or git log -p
+#### git log --patch or git log -p
 One of the more helpful options is -p or --patch, which shows the difference introduced in each commit.
 You can also limit the number of log entries displayed such as -2 to show the only last 2 entries.
 
-##### git log --stat
+#### git log --stat
 This is lighter wieght version of git log --stat.
 
-##### git log --pretty=<options>
+#### git log --pretty=<options>
 This is a way to format git log for us.
 The oneline options makes each commit a single line.
 There are short, full and fuller values that output the format with less or more information.
@@ -857,42 +855,42 @@ To sum it up, the shell interprets the command line following its own globbing l
 ### 2.4 Git Basics - Undoing Things
 [Table of Contents](#Table-of-Contents)
 
-##### undoing Things
+#### undoing Things
 After doing something you may want to undo it. 
 Here are some basic undo tools but be careful because you cannot undo some of these undos.
 
-###### Amending a commit
+#### Amending a commit
 If you forgot to add a file to a commit you can change and ammend the previous commmit using:
     git commit --amend
 
 This replaces your previous commit with the results of the next commit.
 
-###### Unstaging a Staged File
+#### Unstaging a Staged File
 You can remove a file from staging using the command:
     git reset HEAD <file>
 
 
-###### Unmodifying a Modified File
+#### Unmodifying a Modified File
 If you want to unmodify a file you can do this via:
     git checkout -- <file>
 
 This will erase the contents of the file with the latest commits version of that file.
 
-###### Keep changes that you have made
+#### Keep changes that you have made
 You can stash a file to get it out the way for now.
 
 Remember you can recover anything that you have committed.
 You can even recover commits that were overwritten with --amend commit. 
 However, you cannot recover anything that you never committed.
 
-###### Undoing things with git restore
+#### Undoing things with git restore
 git restore is an alternative to git reset for many of our undo operations.
 
-###### Unstaging a Staged File with git restore
+#### Unstaging a Staged File with git restore
 In order to unstage a file that is in the staging area
     git restore --staged <file>
 
-###### Unmodifying a Modified File with git restore
+#### Unmodifying a Modified File with git restore
 In order to revert any changes to a file to the last commit (or unmodifying a modified file
     git restore <file>
 
@@ -908,7 +906,7 @@ You can have multiple which are either read-only or read/write for you.
 Collaborating with others involves managing these remote repos and pushing and pulling data to and from them to share work.
 Managing remote repos includes how to add additional remote repos, removing repos, managing remote branches and define them as being tracked or not, and more.
 
-##### Showing Your Remotes
+#### Showing Your Remotes
 To see remote server that have been configured, run the command:
     git remote
 
@@ -921,7 +919,7 @@ You can add the -v option to get the URLs that Git has stored for the shortname 
 We could have more than one remote for working with several collaborators.
 This means we can pull from these contributor and may have permissions to push to one or more of these but we can't tell that from here.
 
-##### Adding New Remote Repositories
+#### Adding New Remote Repositories
 Git clone implicitly adds origin remote for us.
 To add new remotes explicitlym run the command:
     git remote add <remote-shortname> <url>
@@ -950,7 +948,7 @@ and will default to
 and is the same as
     git pull origin
 
-##### Pushing to Your Remotes
+#### Pushing to Your Remotes
 When you have your project at a point that you want to share, you have to to push it upstream.
 If you want to push your master branch to your origin server, and push any commits you've done up to the server:
     git push origin master
@@ -962,7 +960,7 @@ This will only work if you have write access and nobody pushed in the meantime.
 If someone has pushed upstream and you try to you will be rejected because yours is out of date.
 Therefore, you must first pull integrate your changes and then you can push.
 
-##### Inspecting a Remote
+#### Inspecting a Remote
 If you want to see information on a remote repository, use the command:
     git remote show <remote-shortname>
 
@@ -973,16 +971,16 @@ It also will list the branches it doesn't yet have.
 Additionally, it will show which branches are automatically pushed to when you run git push while on certain branches.
 Additionally, it will show you the remote branches that you do not have.
 
-##### Renaming and Removing Remotes
+#### Renaming and Removing Remotes
 
-###### Renaming Remote
+##### Renaming Remote
 You can also rename a remote via the command:
     git remote rename <old-remote-shortname> <new-remote-shortname>
 
 Ex:
     git remote rename pb paul
 
-###### Deleting Remote
+##### Deleting Remote
 You can remove a remote - you've moved the server, you aren't using a mirror, or a contributor is not longer contributing anymnore, via the command:
     git remote remove
 or
@@ -993,19 +991,19 @@ Once we delete the reference, all remote-tracking branches and configuration set
 ### 2.6 Git Basics - Tagging
 [Table of Contents](#Table-of-Contents)
 
-##### Tagging
+#### Tagging
 Tagging is used by Git to tag specific commits in a repository's history.
 People mark release points.
 We will show how to list existing tags, create and delete tags, and what the different tags are.
 
-###### Listing Your Tags
+#### Listing Your Tags
 Listing the existing tags in Git, via the command:
     git tag
 
 You can also pattern match the tags, via the -l or --list option (which is implicit for git tag):
     git tag -l "v1.8.5*"
 
-###### Creating Tags
+#### Creating Tags
 Git supports 2 types of tags:
     - lightweight
     - annotated
@@ -1016,7 +1014,7 @@ On the other hand, Annotated tags are stored as full objects in the Git database
 They're checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Gaurd (GPG). 
 Generally, annotated tags are preferred. 
 
-###### Annotated Tags
+#### Annotated Tags
 You can create an annotated tag in Git is simple.
 The easiest way is to specify -a when you run the tag command:
     git tag -a v1.4 -m "my version 1.4"
@@ -1026,18 +1024,18 @@ If you don't specify a message for an annotated tag, Git launches your editor so
 You can see all the tag data along with the commit that was tagged by using the git show command:
     git show v1.4
 
-###### Lightweight Tags
+#### Lightweight Tags
 Another way to tag commits is with a lightweight tag.
 To create a lightweight tag, don't supply any of -a, -s, or -m options, just provide a tag name:
     git tag v1.4-lw
 
 This time, if you run git show on the tag, you don’t see the extra tag information.
 
-###### Tagging Later
+#### Tagging Later
 Now, suppose you forgot to tag the project at v1.2, which was at the “Update rakefile” commit. You can add it after the fact. To tag that commit, you specify the commit checksum (or part of it) at the end of the command:
     git tag -a v1.2 9fceb02
 
-###### Sharing Tags
+#### Sharing Tags
 By default, the git push command doesn’t transfer tags to remote servers. 
 You will have to explicitly push tags to a shared server after you have created them. 
 This process is just like sharing remote branches — you can run the command:
@@ -1052,7 +1050,7 @@ You can push all the tags at once by adding the --tags option to the git push co
 In order to push only the annotated tags:
     git push <remote> --follow-tags only annotated tags will be pushed to the remote.
 
-###### Deleting Tags
+#### Deleting Tags
 To delete a tag on your local repository, you can use git tag -d <tagname>:
     git tag -d v1.4-lw
 
@@ -1067,7 +1065,7 @@ There are 2 common variations for deleting a tag from a remote server.
     Ex:
         git push origin --delete v1.4-lw
 
-###### Checking out Tags
+#### Checking out Tags
 If you want to view the versions of files a tag is pointing to, you can do a git checkout of that tag, although this puts your repository in "detached HEAD" state, which has some ill effects:
     git checkout v2.0.0
 *** detached HEAD means you have checked out a single commit in history ***
@@ -1080,7 +1078,7 @@ If you do this and make a commit, your version2 branch will be slightly differen
 ### 2.7 Git Basics - Git Aliases
 [Table of Contents](#Table-of-Contents)
 
-##### Git Aliases 
+#### Git Aliases 
 Git aliases is a feautre in Git that makes our experience simpler, easier, and more familiar.
 Git doesn't automatically infer your commands if you partially type them.
 You can shorten Git commands by setting up alias for each command using git config.
@@ -1118,6 +1116,8 @@ Next, we will learn about Git's most killer feature: its branching model.
 
 ### My Notes on 2.
 [Table of Contents](#Table-of-Contents)
+
+
 
 ## 3. Git Branching
 [Table of Contents](#Table-of-Contents)
