@@ -105,7 +105,7 @@ I will be using this project as a personal Git reference-guide.
     * [10.9 Summary](#109-Git-Internals---Summary)
     * [My Notes on 10.](#My-Notes-on-10)
   * [Appendix](#Appendix)
-    * [A1. Appendix A: Git in Other Environments](#A1-Appendix-A:-Git-in-Other-Environments)
+    * [A1. Appendix A: Git in Other Environments](#A1-Appendix-A---Git-in-Other-Environments)
       * [A1.1 Graphical Interfaces](#A11-Appendix-A---Graphical-Interfaces)
       * [A1.2 Git in Visual Studio](#A12-Appendix-A---Git-in-Visual-Studio)
       * [A1.3 Git in Visual Studio Code](#A13-Appendix-A---Git-in-Visual-Studio-Code)
@@ -115,13 +115,13 @@ I will be using this project as a personal Git reference-guide.
       * [A1.7 Git in Zsh](#A17-Appendix-A---Git-in-Zsh)
       * [A1.8 Git in PowerShell](#A18-Appendix-A---Git-in-PowerShell)
       * [A1.9 Summary](#A19-Appendix-A---Summary)
-    * [A2. Appendix B: Embedding Git in your Applications](#A2-Appendix-B:-Embedding-Git-in-your-Applications)
+    * [A2. Appendix B: Embedding Git in your Applications](#A2-Appendix-B---Embedding-Git-in-your-Applications)
       * [A2.1 Command-line Git](#A2-Appendix-B---Command-line-Git)
       * [A2.2 Libgit2](#A2-Appendix-B---Libgit2)
       * [A2.3 JGit](#A2-Appendix-B---JGit)
       * [A2.4 go-git](#A2-Appendix-B---go-git)
       * [A2.5 Dulwich](#A2-Appendix-B---Dulwich)
-    * [A3. Appendix C: Git Commands](#A3-Appendix-C:-Git-Commands)
+    * [A3. Appendix C: Git Commands](#A3-Appendix-C---Git-Commands)
       * [A3.1 Setup and Config](#A3-Appendix-C---Setup-and-Config)
       * [A3.2 Getting and Creating Projects](#A3-Appendix-C---Getting-and-Creating-Projects)
       * [A3.3 Basic Snapshotting](#A3-Appendix-C---Basic-Snapshotting)
@@ -1993,7 +1993,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ## Appendix
 [Table of Contents](#Table-of-Contents)
 
-### A1. Appendix A: Git in Other Environments
+### A1. Appendix A - Git in Other Environments
 [Table of Contents](#Table-of-Contents)
 
 #### A1.1 Appendix A - Graphical Interfaces
@@ -2023,7 +2023,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 #### A1.9 Appendix A - Summary
 [Table of Contents](#Table-of-Contents)
 
-### A2. Appendix B: Embedding Git in your Applications
+### A2. Appendix B - Embedding Git in your Applications
 [Table of Contents](#Table-of-Contents)
 
 #### A2.1 Appendix B - Command-line Git
@@ -2041,7 +2041,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 #### A2.5 Appendix B - Dulwich
 [Table of Contents](#Table-of-Contents)
 
-### A3. Appendix C: Git Commands
+### A3. Appendix C - Git Commands
 [Table of Contents](#Table-of-Contents)
 
 #### A3.1 Appendix C - Setup and Config
