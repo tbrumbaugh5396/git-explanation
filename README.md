@@ -2080,6 +2080,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 #### A3.12 Appendix C - Plumbing Commands
 [Table of Contents](#Table-of-Contents)
 
+### My Notes on Appendix
+[Table of Contents](#Table-of-Contents)
+
 ## References 
 [Table of Contents](#Table-of-Contents)
 
