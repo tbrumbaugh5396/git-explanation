@@ -350,7 +350,7 @@ Personally, I have been using NixOS.
 In order to install Git to NixOS,  add Git to /etc/nixos/configuration.nix git to the line:
     environment.systemPackages = with pkgs; [git];
 
-### 1.6 Getting Started - First-Time Git setup
+### 1.6 Getting Started - First-Time Git Setup
 [Table of Contents](#Table-of-Contents)
 
 ##### First-Time Git Setup
@@ -1084,6 +1084,11 @@ Now we know how to do all the basic local Git operations - creating or cloning a
 
 Next, we will learn about Git's most killer feature: its branching model.
 
+### 2. My Notes
+[Table of Contents](#Table-of-Contents)
+
+## 3. Git Branching
+[Table of Contents](#Table-of-Contents)
 
 ### 3.1 Git Branching - Branches in a Nutshell
 [Table of Contents](#Table-of-Contents)
@@ -1604,6 +1609,9 @@ Now, we should feel comfortable switching branches, merging local branches toget
 You should be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared.
 Next, we will cover what is needed to run your own Git repository-hosting server.
 
+### 3. My Notes
+[Table of Contents](#Table-of-Contents)
+
 ## 4.1 Git on the Server
 
 ### 4.1 Git on the Server - The Protocols
@@ -1817,6 +1825,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 4.10 Git on the Server - Summary
 [Table of Contents](#Table-of-Contents)
 
+### 4. My Notes
+[Table of Contents](#Table-of-Contents)
+
 ## 5 Distributed Git
 [Table of Contents](#Table-of-Contents)
 
@@ -1830,6 +1841,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 ### 5.4 Distributed Git - Summary
+[Table of Contents](#Table-of-Contents)
+
+### 5. My Notes
 [Table of Contents](#Table-of-Contents)
 
 ### 6.1 GitHub - Account Setup and Configuration
@@ -1848,6 +1862,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 ### 6.6 GitHub - Summary
+[Table of Contents](#Table-of-Contents)
+
+### 6. My Notes
 [Table of Contents](#Table-of-Contents)
 
 ### 7.1 Git Tools - Revision Selection
@@ -1895,6 +1912,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 7.15 Git Tools - Summary
 [Table of Contents](#Table-of-Contents)
 
+### 7. My Notes
+[Table of Contents](#Table-of-Contents)
+
 ### 8.1 Customizing Git - Git Configuration
 [Table of Contents](#Table-of-Contents)
 
@@ -1910,6 +1930,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 8.5 Customizing Git - Summary
 [Table of Contents](#Table-of-Contents)
 
+### 8. My Notes
+[Table of Contents](#Table-of-Contents)
+
 ### 9.1 Git and Other Systems - Git as a Client
 [Table of Contents](#Table-of-Contents)
 
@@ -1917,6 +1940,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 ### 9.3 Git and Other Systems - Summary
+[Table of Contents](#Table-of-Contents)
+
+### 9. My Notes
 [Table of Contents](#Table-of-Contents)
 
 ### 10.1 Git Internals - Plumbing and Porcelain
@@ -1946,6 +1972,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 10.9 Git Internals - Summary
 [Table of Contents](#Table-of-Contents)
 
+### 10. My Notes
+[Table of Contents](#Table-of-Contents)
+
 ### A1 Appendix A: Git in Other
 [Table of Contents](#Table-of-Contents)
 
@@ -1957,4 +1986,5 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 
 ## References 
 [Table of Contents](#Table-of-Contents)
+
 VCS: Version Control System
