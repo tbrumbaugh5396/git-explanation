@@ -1611,7 +1611,7 @@ Next, we will cover what is needed to run your own Git repository-hosting server
 ### My Notes on 3.
 [Table of Contents](#Table-of-Contents)
 
-## 4.1 Git on the Server
+## 4. Git on the Server
 [Table of Contents](#Table-of-Contents)
 
 ### 4.1 Git on the Server - The Protocols
@@ -1828,7 +1828,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### My Notes on 4. 
 [Table of Contents](#Table-of-Contents)
 
-## 5 Distributed Git
+## 5. Distributed Git
 [Table of Contents](#Table-of-Contents)
 
 ### 5.1 Distributed Git - Distributed Workflows
@@ -1844,6 +1844,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 ### My Notes on 5.
+[Table of Contents](#Table-of-Contents)
+
+## 6. GitHub
 [Table of Contents](#Table-of-Contents)
 
 ### 6.1 GitHub - Account Setup and Configuration
@@ -1865,6 +1868,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 ### My Notes on 6.
+[Table of Contents](#Table-of-Contents)
+
+## 7. Git Tools
 [Table of Contents](#Table-of-Contents)
 
 ### 7.1 Git Tools - Revision Selection
@@ -1915,6 +1921,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### My Notes on 7. 
 [Table of Contents](#Table-of-Contents)
 
+## 8. Customizing Git 
+[Table of Contents](#Table-of-Contents)
+
 ### 8.1 Customizing Git - Git Configuration
 [Table of Contents](#Table-of-Contents)
 
@@ -1933,6 +1942,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### My Notes on 8. 
 [Table of Contents](#Table-of-Contents)
 
+## 9. Git and Other Systems
+[Table of Contents](#Table-of-Contents)
+
 ### 9.1 Git and Other Systems - Git as a Client
 [Table of Contents](#Table-of-Contents)
 
@@ -1943,6 +1955,9 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 ### My Notes on 9. 
+[Table of Contents](#Table-of-Contents)
+
+## 10. Git Internals
 [Table of Contents](#Table-of-Contents)
 
 ### 10.1 Git Internals - Plumbing and Porcelain
