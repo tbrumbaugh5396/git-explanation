@@ -1259,7 +1259,32 @@ You can a remote repository: git remote add branch url
 You can fetch all the repository history: git fetch branch
 However, this is now on our computer it is under the remote's name and branches -- they aren't automatically merged.
 If your current branch is setup to track a remote branch, you can fetch and merge that remote branch into your current branch in one step: git pull
+If you have write permission to a remote, you can push your branch to the remote's branch as long as they aren't out-of-date because someone else pushed first: git push <remote> <branch>
+You can see all of the information of a remote: git remote show <remote>
+You can rename a remote repository: git remote rename old-remote-name new-remote-name
+You can remove a remote repository: git remote remove remote-name
 
+We can mark specific points in a repository history's specific commits using tags.
+There are 2 types of tags:
+- lightweight (like a branch that doesn't move is just a pointer to a specific commit)
+- annotated   (full git object and are prefferred)
+
+You can see all tags: git tag OR git tag -l OR git tag --list
+You can see tags that match a pattern: git tag -l "v1.*"
+Creating lightweight tags: git tag v1-lw
+Creating annotated tags: git tag -a v1
+See the git commit a tag points to: git show v1-lw
+You can share a tag remotely: git push <remote> <tag-name>
+You can share all tags: git push <remote> --tags
+Deleting a tag: git tag -d v1-lw
+Deleting a remote server's tag: git push <remote> :refs/tags/<tag-name> OR git push origin --delete <tag-name>
+How to get the files in the working directory from the commit of the tag: git checkout <tag-name>
+However, this puts in a detached HEAD state.
+If you commit the tag will stay the same, but your new commit won't belong to any branch and will be unreachable except by commit hash.
+You can checkout files into the working directory to a branch: git checkout -b version1 v1
+
+Git aliases can be added to git to store shorthand commands or certain commonly used options.
+You can also alias external commands rather than a subcommand can be specified starting with the ! character.
 
 ## 3. Git Branching
 [Table of Contents](#Table-of-Contents)
