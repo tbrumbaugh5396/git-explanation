@@ -187,7 +187,7 @@ Therefore, software developers created local VCSs that had a simple database tha
 And this will produce a flow chart:
 
 ```mermaid
-graph TD
+graph LR
 A[File] -- Local Version Control --> B(Version 1)
 A --> C(Version 2)
 A --> D(Version 3)
