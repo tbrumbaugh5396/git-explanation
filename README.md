@@ -1305,7 +1305,7 @@ In Git, switching back and forth very quickly.
 Git encourages workflows that branch and merge often.
 Understanding and masterin gthis feature gives you a powerful and unique tool and will change the way that you develop.
 
-##### Branches in a Nutshell
+#### Branches in a Nutshell
 Git stores data as a series of snapshots.
 When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged.
 This object also contains the author's name and email address, the message that you typed, and pointers to the commit or commits that directly came before this commit (its parent or parents): zero parents for the initial commit, one parent for a normal commit, and multiple parents for a commit thatresults from a merge of 2 or more branches.
@@ -1330,7 +1330,7 @@ The default branch name in Git is master.
 As you start making commits, you're given a master branch that points to the last commit you made.
 Every time you commit, the master branch pointer moves forward, automatically.
 
-##### Creating a New Branch
+#### Creating a New Branch
 What happens when you create a new branch?
 Well, doing so creates a new pointer for you to move around.
 Let's say you want to create a new branch called testing.
@@ -1347,7 +1347,7 @@ The git branch command creates a new branch -- it doesn't automatically switch t
 The git log command shows the HEAD pointing to a branch.
 Additionally, we see the names of the branches next to the commit.
 
-##### Switching Branches
+#### Switching Branches
 To switch to an existing branch, you run the git checkout command. 
 This switches to the new branch.
 For example, when we switch to our testing branch via:
@@ -1395,7 +1395,7 @@ You'll do the following:
     - After it's tested, merge the hotfix branch, and push to production
     - Switch back to your original user story and continue working
 
-##### Basic Branching
+#### Basic Branching
 First, say you already have a few commits.
 
 You've decided that you're going to work on issue #53 in your issue-tracking system.
@@ -1440,7 +1440,7 @@ Now you can switch back to your work-in-progress branch on issue53 and continue 
 It's worth noting here that the work you did in your hotfix branch is not contained in the files on your issue53 branch.
 If you need to pull it in, you can merge your master branch into you issue53 branch by running git merge master, or you can wait to integrate those changes until you decide to pull the issue53 branch back into master, later.
 
-##### Basic Merging
+#### Basic Merging
 Suppose you've decided that your issue #53 work is complete and ready to be merged into your master branch. 
 In order to do that, you'll merge your issue53 branch into master, much like you merged you hotfix branch earlier.
 All you have to do is check out the branch you wish to merge into and then run the git merge command:
@@ -1458,10 +1458,9 @@ This is referred to a merge commit, and is special in that it has more than 1 pa
 Then once that is done, delete the old branch via:
     git branch -d issue53
 
-##### Basic Merge Conflicts
+#### Basic Merge Conflicts
 If there are 2 differences of the same part.
 You will get merge conflicts that shows where the conflict occurs.
-
 
 Git hasn't automatically created a new merge commit.
 It paused while you resolve the conflict.
@@ -1493,7 +1492,7 @@ which will finilize the merge.
 ### 3.3 Git Branching - Branch Management
 [Table of Contents](#Table-of-Contents)
 
-##### Branch Management
+#### Branch Management
 Now that you've created, merged, and deleted some branches, let's look at some branch-management tools that will come in handy when you are using branches all the time.
 
 The branch command does more than create and delete branches.
@@ -1568,11 +1567,11 @@ After you've done all these tasks, and are certain the main branch performs just
 ### 3.4 Git Branching - Branching Workflows
 [Table of Contents](#Table-of-Contents)
 
-##### Branching Workflows
+#### Branching Workflows
 Now we have the basics of branching and merging down, that can or should you do with them?
 We will cover some common workflows that lightweight branching makes possible, you can decide if you would like to incorporate them into your own development cycle.
 
-##### Long-Running Branches
+#### Long-Running Branches
 Git uses a simple 3-way merge, merging from one branch into another multiple times over a long period is generally easy to do.
 This means you can have several branches that are always open and that you use for different stages of your development cycle; you can merge regularly from some of them into others.
 
@@ -1590,17 +1589,16 @@ Some larger projects also have a proposed or pu (proposed updates) branch that h
 The idea is that your branches are at various levels of stability; when they reach a more stable level, they're merged into the branch above them.
 Again, having multiple long-running branches isn't necessary, but it's often helpful, especially when you're dealing with very large or complex projects.
 
-##### Topic Branches
+#### Topic Branches
 Topic branches are useful in projects of any size.
 A topic branch is a short-lived branch that you create and use for a single particular feature or related work.
 
 You did a few commits on them and deleted them directly after merging them into your main branch.
 
-
 ### 3.5 Git Branching - Remote Branches
 [Table of Contents](#Table-of-Contents)
 
-##### Remote Branches
+#### Remote Branches
 Remote references are references (pointers) in your remote repositories, including branches, tags, and so on. 
 You can get a full list of remote references explicitly with:
     git ls-remote <remote>
@@ -1714,11 +1712,11 @@ The Git server will generally keep the data there for a while until a garbage co
 ### 3.6 Git Branching - Rebasing
 [Table of Contents](#Table-of-Contents)
 
-##### Rebasing
+#### Rebasing
 In Git, there are 2 main ways to integrate changes from 1 branch into another: the merge and the rebase.
 We will learn about rebasing: when you want to use it and when you don't want to use it.
 
-###### The Basic Rebase
+##### The Basic Rebase
 If you go back to an earlier example from Basic Merging, you can see that you diverged your work and made commits on 2 different branches.
 The easiest way to integrate the branches, as we've already covered, is the merge command.
 If preforms 3-way merge between the 2 latest branch snapshots and the most recent common ancestor of the 2, creating a new snapshot (and commit).
@@ -1740,7 +1738,7 @@ Then, you can go back to the master branch and do a fast-forward merge.
 The benefit of a rebase vs a merge is it leaves a cleaner history.
 Rebasing makes the work look sequential even if the work happened in parallel.
 
-###### More Interesting Rebases
+##### More Interesting Rebases
 You can also rebase other branches than the target branch.
 Suppose you decide that you want to merge your client-side changes into your mainline for a release, but you want to hold off on the server-side changes until it's tested further.
 You can take the changes on client that aren't on server and replay them on your master branch by using the --onto option of git rebase:
@@ -1766,7 +1764,7 @@ Then, you can delete the client and server branches via:
     git branch -d client
     git branch -d server
 
-###### The Perils of Rebasing
+#### The Perils of Rebasing
 
 Don't rebase commits outside your repo and that people may base work on.
 This is because the commits will be different that the person is basing their work on.
@@ -1778,7 +1776,7 @@ The person who pushed the merged work devides to go back and rebase their work i
 
 Thus, if a rebase after a merge that is push to a remote where work has been completed, we will have a cluttered history because the rebase commits will be different than the merge.
 
-###### Rebase When You Rebase
+#### Rebase When You Rebase
 
 If you do end up cluttering up your commit history, there is additional Git magic that can be used to help in these situations.
 In addition to calculating the commit SHA-1 checksum, Git also calculates a checksum that is based on the patch introduced with the commit called the "patch-id".
@@ -1786,7 +1784,7 @@ In addition to calculating the commit SHA-1 checksum, Git also calculates a chec
 Big take away is Git Rebases locally are fine.
 However, it gets tricky when you rebase when collaborating.
 
-###### Rebase vs. Merge
+#### Rebase vs. Merge
 
 Now, that we have seen rebase and merge in action, we may be wondering which is better?
 
@@ -1811,13 +1809,99 @@ You can get the best of both worlds by rebasing local changes before pushing to 
 ### 3.7 Git Branching - Summary
 [Table of Contents](#Table-of-Contents)
 
-##### Summary
+#### Summary
 Now, we should feel comfortable switching branches, merging local branches together.
 You should be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared.
 Next, we will cover what is needed to run your own Git repository-hosting server.
 
 ### My Notes on 3.
 [Table of Contents](#Table-of-Contents)
+
+A branch is Git is a pointer that moves around. 
+The current commit is pointed to by HEAD which can point to the branch which points to a branch.
+
+To see all the branches: 
+- git branch
+To see the remote branches:
+- git branch --all
+
+To see the commits with each branch: git branch -v
+To filter branches that have been merged into the 1 you are currently on: git branch --merged
+To filter branches that haven't been merge into the 1 you are currently on: git branch --no-merged
+You can create a new branch which points to the current commit we are on: git branch <new-branch>'
+To get the files from a tag or branch into the working directory: git checkout <branch>
+Make another branch that points to the current commit and switch to that branch: git checkout -b <branch-name>
+The same as git branch <branch-name> git checkout <branch-name>
+Delete a branch pointer: git branch -d <branch-name>
+However, if a branch isn't merged deleting it will fail to delete anyway: git branch -D <branch-name>
+To rename a branch: git branch --move old-branch-name new-branch-name
+However, this change is local to get it on a remote: git push --set-upstream <remote> new-branch-name
+However, we need to delete the old branch remotely: git push <remote> --delete old-branch-name
+Push branch changes to remote: git push <remote> <branch>
+This is short-hand for: push <remote> refs/heads/<branch>:refs/heads/<branch>
+You can also do: push <remote> <branch>:<branch>
+This takes the local branch and pushes to the remotes branch.
+The names can differ between the remote and the local repositories.
+
+
+There are many different models that we may want our branches to follow.
+
+Remote references are references in remote repositories, these are tags, branches and so on.
+You cannot move them directly only the local user on that machine.
+Git automatically updates them every time you connect to the remote repository.
+Their naming convention is <remote>/<branch>
+
+
+Get all remote references: 
+- git ls-remote <remote>
+- git remote show <remote>
+Update remote reference: git fetch <remote>
+Fetching from a remote automatically creates what is called a "tracking branch".
+This is a local branch that is connected to a remote branch.
+Thus, git pull works when you are on the branch.
+
+You can setup a tracking branch:
+- git checkout -b <branch> <remote>/<branch>
+- git checkout --track <remote>/<branch>
+
+If the branch is not local and exactly matches a name on only 1 remote then it will automatically be done: git checkout <single-remote-branch>
+To get a local branch with a different name from its remote: git checkout -b <different-branch> <remote>/<branch-name>
+
+To change the upstream branch that is being tracked on a local branch: 
+- git branch -u <remote>/<branch-name>
+- git branch --set-upstream <remote>/<branch-name>
+
+To see all the tracking branches: git branch -vv
+These only show the commit since we have last fetched.
+Therefore, to get it all upto date run git fetch --all first: git fetch --all; git branch -vv
+
+Add a new remote: git remote add <remote-name> <url>
+
+Git pull is essentially a fetch and then a merge.
+Usually, this is a fast-forword but it can be both a merge with the remote.
+
+
+You can merge branches that are in sequence which will bring the older one upto the newer one (fast-forward): git checkout older git merge newer
+
+We can merge branches that are not insequence by checking out 1 branch and merging the rest: git checkout one-branch git merge two-branch ... other-branches
+This will merge the branches selected and use the common ancestor of all of them.
+If we merged n commits, we will actually merge n+1 commits.
+If the diffs dont conflict this creates a new commit that has all of the changes.
+
+However, if there are conflicts we will need to resolve these conflicts which git automatically marks and we must select the conflicts from each.
+The tool that gets used: git mergetool
+
+Rebase is an alternative to merge. 
+Essentially, a rebase turns a merge that has been done between 2 file into a succession of a previous commit: git checkout old-path-commit
+git rebase new-path-commit
+The do a fast-forward merge: git checkout new-path-commit old-path-commit
+
+We can take a segment of history and rebase: git rebase --onto branch-rebase-onto branch-of-branch branch-rebase-from
+The do a fast-forward merge: git checkout branch-rebase-onto branch-rebase-from
+
+We can push the merged work: git push --force
+
+To pull from a remote without having to resolve differences, we can incorporate with a rebase: git pull --rebase
 
 ## 4. Git on the Server
 [Table of Contents](#Table-of-Contents)
