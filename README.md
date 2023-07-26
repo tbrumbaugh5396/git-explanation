@@ -194,7 +194,14 @@ Therefore, software developers created local VCSs that had a simple database tha
 
 And this will produce a flow chart:
 
-
+```mermaid
+graph TD;
+    A--B;
+    A--C;
+    A--D;
+    B--C
+    C--D;
+```
 
 ```mermaid
 graph TD;
