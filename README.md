@@ -198,10 +198,9 @@ And this will produce a flow chart:
 
 ```mermaid
 graph TD;
-A[File]-->B(Version 1);
-A-->C(Version 2);
-A-->D(Version 3);
-
+A[File]--B(Version 1);
+A--C(Version 2);
+A--D(Version 3);
 B--C--D;
 ```
 
