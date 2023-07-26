@@ -7,16 +7,58 @@
 [alias]
 list-settings = git config --list
 check-variable = git config # needs to add a key-value
-where-does-variable-come-from = git config --show-origin # needs to add a key-value
+where-does-variable-come-from = git config --show-origin                  # needs to add a key-value
 get-all-git-commands = git help -a
-make-directory-a-git-repository = init
+
+# making or cloning git repositories
+make-directory-a-repository = init
 clone-a-remote-repository = clone
+
+# operations around working tree, staging areas, and commits
 add-from-working-tree-to-staging-area = add
 commit-directly-from-working-tree = commit -a
-difference-between-staging-area-and-last-commit = git diff --staged # this is equivalent to git diff --cached
-difference-between-working-area-and-last-commit = git diff
 remove-file-from-tracking = rm
 remove-file-from-staging-area = rm --cached
+amend-file-to-previous-commit = commit --amend
+unstage-file = reset HEAD                                                  # or unstage or restore --staged
+unmodify-file = checkout --                                                # or restore
+
+# differences
+difference-between-staging-area-and-last-commit = git diff --staged        # this is equivalent to git diff --cached
+difference-between-working-area-and-last-commit = git diff
+
+# commit history
+view-commit-history = log
+view-commit-history-with-patches = log --patch # or log -p
+# there are more logging information that can be added.
+
+
+# remote repository related
+view-remote-repositories = remote
+view-remote-repositories-and-their-URLs = remote -v
+update-all-information-from-remote-repositories = fetch                    # with <remote-repository-name>
+add-remote-repositories = remote add                                       # with <remote-repository-name> <URL>
+view-remote-repository-information = remote show                           # with <remote-repository-name>
+rename-remote-repository = remote rename                                   # with <old-remote-repository-name> <new-remote-repository-name>
+remove-remote-repository = remote remove # or remote rm                    # with <remote-repository-name>
+push-branch-to-remote-repository = push
+
+# tag related
+view-tags = tag # or tag -l or tag --list
+view-tags-matching-pattern = tag -l                                        # with <tag-pattern>
+view-commit-associated-with-tag = show                                     # with <tag-name>
+add-lightweight-tag = tag                                                  # with <tag-name>
+add-annotated-tag = tag -a                                                 # with <tag-name> <commit-checksum>
+push-tag-to-remote-repository = push                                       # with <remote-repository-name> <tag-name>
+push-all-tags-to-remote-repository = "!git push \"$1\"^ --tags #"          # with <remote-repository-name>
+delete-tag = tag -d                                                        # with <tag-name>
+delete-tag-from-remote-repository = "!git push \"$1\"^ --delete \"$2\"^ #" # with <remote-repository-name> <tag-name>   
+
+# checkout
+put-the-commit-the-tag-points-to-into-working-tree = checkout                         # with <tag-name>
+put-the-commit-the-tag-points-to-into-working-tree-and-make-it-a-branch = checkout -b # with <branch> <tag-name>
+
+
 
 ########### Checkout https://gist.github.com/pksunkara/988716 for more .gitconfig settings #[core]
 ## editor = nvim
