@@ -1239,8 +1239,10 @@ You can commit on behalf of someone else with options on the commit command.
 There is another graph option which shows a nice little ASCII graph of our branch and merge history: git log --graph
 There are also time limiting options for git log.
 Another helpful filer, find the number of times that the number of occurances of a string has been changed: git log -S string
+
 Example:
-  git log -S function # shows the commits where the number of references changes
+- git log -S function # shows the commits where the number of references changes
+
 This last filter, find commits that had change to the file specified: git log -- path/to/file
 You can also add the option --no-merges to get rid of commits that are merges: git log --no-merges
 
