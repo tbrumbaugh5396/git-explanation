@@ -1046,7 +1046,7 @@ Now, suppose you forgot to tag the project at v1.2, which was at the “Update r
 By default, the git push command doesn’t transfer tags to remote servers. 
 You will have to explicitly push tags to a shared server after you have created them. 
 This process is just like sharing remote branches — you can run the command:
-    git push origin <tagname>
+    git push origin <tagname>git push origin --delete <tagname>
 
 Ex:
     git push <remote-shortname> v1.5
@@ -1269,7 +1269,10 @@ There are 2 types of tags:
 - lightweight (like a branch that doesn't move is just a pointer to a specific commit)
 - annotated   (full git object and are prefferred)
 
-You can see all tags: git tag OR git tag -l OR git tag --list
+You can see all tags: 
+- git tag
+- git tag -l
+- git tag --list
 You can see tags that match a pattern: git tag -l "v1.*"
 Creating lightweight tags: git tag v1-lw
 Creating annotated tags: git tag -a v1
@@ -1277,7 +1280,9 @@ See the git commit a tag points to: git show v1-lw
 You can share a tag remotely: git push <remote> <tag-name>
 You can share all tags: git push <remote> --tags
 Deleting a tag: git tag -d v1-lw
-Deleting a remote server's tag: git push <remote> :refs/tags/<tag-name> OR git push origin --delete <tag-name>
+Deleting a remote server's tag:
+- git push <remote> :refs/tags/<tag-name>
+- git push origin --delete <tag-name>
 How to get the files in the working directory from the commit of the tag: git checkout <tag-name>
 However, this puts in a detached HEAD state.
 If you commit the tag will stay the same, but your new commit won't belong to any branch and will be unreachable except by commit hash.
