@@ -171,7 +171,7 @@ Software examples will be used throughout this book.
 
 VCS allow you to:
 - revert selected files back to a previous state, 
-- revert the entire project back to a previous statem, 
+- revert the entire project back to a previous state, 
 - compare changes over time, 
 - see who last modified something that might be causing a problem.
 - who introduced an issue and when,
@@ -202,6 +202,8 @@ People encountered the problem of collaborating with developers on other systems
 To solve this problem, Centralized Version Control Systems (CVCSs) were developed.
 These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central location.
 Centralized Version Control had been the standard.
+However, this setup has some downsides. 
+Namely
 
 ```mermaid
 graph LR;
@@ -212,7 +214,7 @@ graph LR;
     C-->D-->E;
 ```
 
-##### Distributed Version Control Systems
+#### Distributed Version Control Systems
 The next evolution in VCSs is Distributed Version Control Systems (DVCSs).
 In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don't just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history.
 Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. 
@@ -241,7 +243,7 @@ graph LR;
 Many of these systems deal well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project.
 This allows new types of workflows that aren't possible in centralized systems, such as hierarchical models.
 
-##### Workflows
+#### Workflows
 https://docs.gitlab.com/ee/topics/gitlab_flow.html
 
 ### 1.2 Getting Started - A Short History of Git
@@ -261,7 +263,7 @@ Therefore, the lessons of VCS led to the development of Git with the goals of:
 
 After this section, you should understand what Git is, how it works, and how to use it effectively.
 
-##### Snapshots, not differences
+#### Snapshots, not differences
 Some VCSs store information as a list of file-based changes and store a set of files and the changes that are made to those files over time. 
 This approach is known as delta-based version control.
 
@@ -275,11 +277,11 @@ Therefore, Git stores its data as a stream of snapshots.
 Therefore, Git is more like a mini filesystem with some powerful tools built on top of it.
 By thinking this way we gain important benefits when we cover Git branching.
 
-##### Nearly Every Operation Is Local
+#### Nearly Every Operation Is Local
 Most operations in Git need only local files and resources to operate (no information is needed from another computer on your network).
 This lack of network ovrehead makes most Git operations seem instantaneous.
 
-##### Git Has Integrity
+#### Git Has Integrity
 Everything in Git is checksummed before it is stored and is then referred to by that checksum.
 This means that it's impossible to change the contents of any file or directory without Git knowing about it.
 This functionality is built into Git and means that you can't lose information in transit or get file corruption without Git being able to detect it.
@@ -288,13 +290,13 @@ Git uses SHA-1 hash for checksumming, which is a 40 character string composed of
 A SHA-1 hash looks something like this: 24b9da6552252987aa493b52f8696cd6d3b00373
 This is how Git stores everything in it's database by the hash value of its contents.
 
-##### Git Generally Only Adds Data
+#### Git Generally Only Adds Data
 Actions in Git generally only add data to the Git database. 
 It is difficult to get the system to do anything that is not undoable or to make it erase data in any way.
 You can lose information that you haven't commited but once you have a snapshot commited it is difficult to lose and even more so if you regularly push your database to other repository.
 Therefore, you can backup and recover data easily if you screw-up.
 
-##### The 3 States
+#### The Three States
 PAY ATTENTION!
 Git has 3 main states that your files can reside in:
 - modified
@@ -329,7 +331,6 @@ If it has been changed since it was checked out but has not been staged, it is m
 
 In Git Basics,you'll learn more about the states and how to take advantage or skip them.
 
-
 ### 1.4 Getting Started - The Command Line
 [Table of Contents](#Table-of-Contents)
 
@@ -350,7 +351,6 @@ In order to install Git to NixOS,  add Git to /etc/nixos/configuration.nix git t
 ### 1.6 Getting Started - First-Time Git Setup
 [Table of Contents](#Table-of-Contents)
 
-##### First-Time Git Setup
 When we first add Git to our system, we should customize our Git environment.
 These updates will remain between upgrades.
 These values can be changed at anytime by re-running these commands.
@@ -389,8 +389,10 @@ Therefore, you can run the command:
 
 We can also view all of our settings and where they are coming from using the command:
     git config --list --show-origin
+Unable to render rich display
 
-##### Your Identity
+Diagram error not found.
+#### Your Identity
 The first thing you should do when you install Git is to set your user name and email address.
 This is important and necessary because every Git commit used this information.
 
@@ -400,21 +402,21 @@ Before you can commit you must configure your identity:
 
 If you want different identity within certain projects you can configure the repositories config file.
 
-##### Your Editor
+#### Your Editor
 Now that our identity is setup, we can configure the default text editor that will be used by Git when we have to type in a message.
 If not configured, Git uses your system's default editor.
 
 If you want to use a different text editor, such as Emacs, you can do the following:
     git config --global core.editor emacs
 
-##### Your default branch name
+#### Your default branch name
 By default Git will create a branch called master when you create a new repository with git init.
 From Git version 2.28 onwards, you can set a different name for the initial branch.
 
 To set main as the default branch name:
     git config --global init.defaultBranch main
 
-##### Checking Your Settings
+#### Checking Your Settings
 If you want to check your configuration settings, you can use the git config --list command to list all the settings Git can find at that point:
     git config --list
 
@@ -449,8 +451,40 @@ Additionally, if you don't need a full-blown manpage for help but just a quick r
 ### 1.8 Getting Started - Summary
 [Table of Contents](#Table-of-Contents)
 
+Now, you should have an understanding of what Git is and how it is different from any centralized version control system.
+Additionally, you should have your system setup with your personal identity.
+
 ### My Notes on 1.
 [Table of Contents](#Table-of-Contents)
+
+Git is a distributed version control system.
+This means that every node (computer) that has a repository has a full backup of the history of that repository.
+That way there is no single point of failure.
+Git stores repositories as snapshots of files rather than differences between files.
+The content of a repository is checksummed to ensure it is correct.
+
+Normal Directories contain files and other directories.
+A git repository is a directory that contains a .git directory in it.
+The other files or directories in that directory that are known by git are known as the working tree.
+There are also git repositories that only contain a .git directory in it and no working tree files.
+These repositories are called "bare" repos.
+
+Within a git repository a file can be either tracked or untracked.
+Either git knows about it, or it doesn't know about the file.
+Once git knows about a file, a Git files have essentially 4 states:
+- unmodified (no changes have been made relative to the last commit)
+- modified (there have been changes since the last commit)
+- staged (the changes that have been made have been added to the staging area)
+- committed (the changes made that have been added to the staging area have been committed to a commit)
+
+ Using NixOS makes it easy to install Git. 
+ All I have to do is add the Git package to my configuration.nix.
+
+ I want to configure my Git setup properly.
+ Therefore, instead of setting up a new git environment each time, I want to declaratively define my configuration in files to store my settings that can be placed in the right places and work.
+ Your git configuration can be declared in a .gitconfig file.
+ Inorder to define the files that you don't want to track with git, use .gitignore file.
+ I will add template files for both.
 
 ### 2. Git Basics
 [Table of Contents](#Table-of-Contents)
@@ -2086,3 +2120,5 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 [Table of Contents](#Table-of-Contents)
 
 VCS: Version Control System
+Revision Control: A synonym for Version Control System
+Patch sets: Collections of differences between files
