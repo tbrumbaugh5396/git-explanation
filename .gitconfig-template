@@ -4,6 +4,20 @@
   username = tbrumbaugh5396
 [init]
   defaultBranch = master
+[alias]
+list-settings = git config --list
+check-variable = git config # needs to add a key-value
+where-does-variable-come-from = git config --show-origin # needs to add a key-value
+get-all-git-commands = git help -a
+make-directory-a-git-repository = init
+clone-a-remote-repository = clone
+add-from-working-tree-to-staging-area = add
+commit-directly-from-working-tree = commit -a
+difference-between-staging-area-and-last-commit = git diff --staged # this is equivalent to git diff --cached
+difference-between-working-area-and-last-commit = git diff
+remove-file-from-tracking = rm
+remove-file-from-staging-area = rm --cached
+
 ########### Checkout https://gist.github.com/pksunkara/988716 for more .gitconfig settings #[core]
 ## editor = nvim
 ## whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
