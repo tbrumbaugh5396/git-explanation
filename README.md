@@ -106,34 +106,34 @@ I will be using this project as a personal Git reference-guide.
     * [My Notes on 10.](#My-Notes-on-10)
   * [Appendix](#Appendix)
     * [A1. Appendix A: Git in Other Environments](#A1-Appendix-A:-Git-in-Other-Environments)
-      * [A1.1 Graphical Interfaces](#A11-Graphical-Interfaces)
-      * [A1.2 Git in Visual Studio](#A12-Git-in-Visual-Studio)
-      * [A1.3 Git in Visual Studio Code](#A1.3 Git in Visual Studio Code)
-      * [A1.4 Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine](#A1.4 Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine)
-      * [A1.5 Git in Sublime Text](#A1.5 Git in Sublime Text)
-      * [A1.6 Git in Bash](#A1.6 Git in Bash)
-      * [A1.7 Git in Zsh](#)
-      * [A1.8 Git in PowerShell](#)
-      * [A1.9 Summary](#)
-    * [A2. Appendix B: Embedding Git in your Applications](#)
-      * [A2.1 Command-line Git](#)
-      * [A2.2 Libgit2](#)
-      * [A2.3 JGit](#)
-      * [A2.4 go-git](#)
-      * [A2.5 Dulwich](#)
-    * [A3. Appendix C: Git Commands](#)
-      * [A3.1 Setup and Config](#)
-      * [A3.2 Getting and Creating Projects](#)
-      * [A3.3 Basic Snapshotting](#)
-      * [A3.4 Branching and Merging](#)
-      * [A3.5 Sharing and Updating Projects](#)
-      * [A3.6 Inspection and Comparison](#)
-      * [A3.7 Debugging](#)
-      * [A3.8 Patching](#)
-      * [A3.9 Email](#)
-      * [A3.10 External Systems](#)
-      * [A3.11 Administration](#)
-      * [A3.12 Plumbing Commands](#)
+      * [A1.1 Graphical Interfaces](#A11-Appendix-A---Graphical-Interfaces)
+      * [A1.2 Git in Visual Studio](#A12-Appendix-A---Git-in-Visual-Studio)
+      * [A1.3 Git in Visual Studio Code](#A13-Appendix-A---Git-in-Visual-Studio-Code)
+      * [A1.4 Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine](#A14-Appendix-A---Git-in-IntelliJ-/-PyCharm-/-WebStorm-/-PhpStorm-/-RubyMine)
+      * [A1.5 Git in Sublime Text](#A15-Appendix-A---Git-in-Sublime-Text)
+      * [A1.6 Git in Bash](#A16-Appendix-A---Git-in-Bash)
+      * [A1.7 Git in Zsh](#A17-Appendix-A---Git-in-Zsh)
+      * [A1.8 Git in PowerShell](#A18-Appendix-A---Git-in-PowerShell)
+      * [A1.9 Summary](#A19-Appendix-A---Summary)
+    * [A2. Appendix B: Embedding Git in your Applications](#A2-Appendix-B:-Embedding-Git-in-your-Applications)
+      * [A2.1 Command-line Git](#A2-Appendix-B---Command-line-Git)
+      * [A2.2 Libgit2](#A2-Appendix-B---Libgit2)
+      * [A2.3 JGit](#A2-Appendix-B---JGit)
+      * [A2.4 go-git](#A2-Appendix-B---go-git)
+      * [A2.5 Dulwich](#A2-Appendix-B---Dulwich)
+    * [A3. Appendix C: Git Commands](#A3-Appendix-C:-Git-Commands)
+      * [A3.1 Setup and Config](#A3-Appendix-C---Setup-and-Config)
+      * [A3.2 Getting and Creating Projects](#A3-Appendix-C---Getting-and-Creating-Projects)
+      * [A3.3 Basic Snapshotting](#A3-Appendix-C---Basic-Snapshotting)
+      * [A3.4 Branching and Merging](#A3-Appendix-C---Branching-and-Merging)
+      * [A3.5 Sharing and Updating Projects](#A3-Appendix-C---Sharing-and-Updating-Projects)
+      * [A3.6 Inspection and Comparison](#A3-Appendix-C---Inspection-and-Comparison)
+      * [A3.7 Debugging](#A3-Appendix-C---Debugging)
+      * [A3.8 Patching](#A3-Appendix-C---Patching)
+      * [A3.9 Email](#A3-Appendix-C---Email)
+      * [A3.10 External Systems](#A3-Appendix-C---External-Systems)
+      * [A3.11 Administration](#A3-Appendix-C---Administration)
+      * [A3.12 Plumbing Commands](#A3-Appendix-C---Plumbing-Commands)
   * [My Notes on Appendix](#My-Notes-on-Appendix)
 * [Reference\'s](#References)
 
@@ -1990,13 +1990,94 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### My Notes on 10. 
 [Table of Contents](#Table-of-Contents)
 
-### A1 Appendix A: Git in Other
+## Appendix
 [Table of Contents](#Table-of-Contents)
 
-### A2 Appendix B: Embedding Git in your Applications
+### A1. Appendix A: Git in Other Environments
 [Table of Contents](#Table-of-Contents)
 
-### A3 Appendix C: Git Commands
+#### A1.1 Appendix A - Graphical Interfaces
+[Table of Contents](#Table-of-Contents)
+
+#### A1.2 Appendix A - Git in Visual Studio
+[Table of Contents](#Table-of-Contents)
+
+#### A1.3 Appendix A - Git in Visual Studio Code
+[Table of Contents](#Table-of-Contents)
+
+#### A1.4 Appendix A - Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine
+[Table of Contents](#Table-of-Contents)
+
+#### A1.5 Appendix A - Git in Sublime Text
+[Table of Contents](#Table-of-Contents)
+
+#### A1.6 Appendix A - Git in Bash
+[Table of Contents](#Table-of-Contents)
+
+#### A1.7 Appendix A - Git in Zsh
+[Table of Contents](#Table-of-Contents)
+
+#### A1.8 Appendix A - Git in PowerShell
+[Table of Contents](#Table-of-Contents)
+
+#### A1.9 Appendix A - Summary
+[Table of Contents](#Table-of-Contents)
+
+### A2. Appendix B: Embedding Git in your Applications
+[Table of Contents](#Table-of-Contents)
+
+#### A2.1 Appendix B - Command-line Git
+[Table of Contents](#Table-of-Contents)
+
+#### A2.2 Appendix B - Libgit2
+[Table of Contents](#Table-of-Contents)
+
+#### A2.3 Appendix B - JGit
+[Table of Contents](#Table-of-Contents)
+
+#### A2.4 Appendix B - go-git
+[Table of Contents](#Table-of-Contents)
+
+#### A2.5 Appendix B - Dulwich
+[Table of Contents](#Table-of-Contents)
+
+### A3. Appendix C: Git Commands
+[Table of Contents](#Table-of-Contents)
+
+#### A3.1 Appendix C - Setup and Config
+[Table of Contents](#Table-of-Contents)
+
+#### A3.2 Appendix C - Getting and Creating Projects
+[Table of Contents](#Table-of-Contents)
+
+#### A3.3 Appendix C - Basic Snapshotting
+[Table of Contents](#Table-of-Contents)
+
+#### A3.4 Appendix C - Branching and Merging
+[Table of Contents](#Table-of-Contents)
+
+#### A3.5 Appendix C - Sharing and Updating Projects
+[Table of Contents](#Table-of-Contents)
+
+#### A3.6 Appendix C - Inspection and Comparison
+[Table of Contents](#Table-of-Contents)
+
+#### A3.7 Appendix C - Debugging
+[Table of Contents](#Table-of-Contents)
+
+#### A3.8 Appendix C - Patching
+[Table of Contents](#Table-of-Contents)
+
+#### A3.9 Appendix C - Email
+[Table of Contents](#Table-of-Contents)
+
+#### A3.10 Appendix C - External Systems
+[Table of Contents](#Table-of-Contents)
+
+#### A3.11 Appendix C - Administration
+[Table of Contents](#Table-of-Contents)
+
+#### A3.12 Appendix C - Plumbing Commands
 [Table of Contents](#Table-of-Contents)
 
 ## References 
