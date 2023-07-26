@@ -188,7 +188,7 @@ And this will produce a flow chart:
 
 ```mermaid
 graph LR
-A[File] -- Local Version Control--> B(Version 1)
+A[File] -- Local Version Control --> B(Version 1)
 A --> C(Version 2)
 A --> D(Version 3)
 
@@ -206,7 +206,7 @@ Centralized Version Control had been the standard.
 
 ```mermaid
 graph LR
-A[File On Computer A] -- Local Version Control--> C(Version 1)
+A[File On Computer A] -- Local Version Control --> C(Version 1)
 B[File On Computer B] --> C 
 A --> D(Version 2)
 A --> E(Version 3)
@@ -225,7 +225,7 @@ Thus, each node is a fully redundent repository.
 
 ```mermaid
 graph LR
-A[File On Computer A] -- Local Version Control--> B(Computer A Version 1)
+A[File On Computer A] -- Local Version Control --> B(Computer A Version 1)
 A --> C(Computer A Version 2)
 A --> D(Computer A Version 3)
 
