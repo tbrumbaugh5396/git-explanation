@@ -4,14 +4,6 @@
 The purpose of this project and repository is to help explain what the tool Git is.
 I will be using this project as a personal Git reference-guide. 
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 # Table of Contents
 * [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
 * [Table of Contents](#Table-of-Content)
@@ -193,15 +185,6 @@ You can forget which directory you are in and accidentally write the wrong file 
 Therefore, software developers created local VCSs that had a simple database that kept track of changes to files under revision control ( a synonym for version control).
 
 And this will produce a flow chart:
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    A-->D;
-    B-->C
-    C-->D;
-```
 
 ```mermaid
 graph TD;
