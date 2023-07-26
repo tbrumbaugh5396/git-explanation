@@ -489,12 +489,19 @@ Once git knows about a file, a Git files have essentially 4 states:
 ### 2. Git Basics
 [Table of Contents](#Table-of-Contents)
 
+This chapters covers every basic command you need to do the vast majority of the things in Git.
+This includes:
+- How to initialize a repository
+- How to start and stop tracking files
+- How to stage and commit changes
+- How to setup .gitignore
+- How to undo mistakes
+- How to browse the history of a repository
+- How to view changes between commits
+- How to push and pull from remote repositories
+
 ### 2.1 Git Basics - Getting a Git Repository 
 [Table of Contents](#Table-of-Contents)
-
-This chapters covers every basic command you need to do the vast majority of the things in Git.
-You'll be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. 
-We will show how to set up Git to ignore certain files and file patterns, hwo to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how a push and pull from remote repositories.
 
 #### Getting a Git Repository
 There are 2 ways to get a Git repository:
@@ -1117,6 +1124,105 @@ Next, we will learn about Git's most killer feature: its branching model.
 ### My Notes on 2.
 [Table of Contents](#Table-of-Contents)
 
+There are 2 ways to get a Git repository:
+- Make one: git init
+- Clone an existing one: git clone server-name-and-repository-name
+There are different transfer protocols that you can use to clone such as local, SSH, HTTPS and Git.
+
+Once, we have a Git repository, a file can be either tracked or untracked.
+Either git knows about it, or it doesn't know about the file.
+Once git knows about a file, a Git files have essentially 4 states:
+- unmodified (no changes have been made relative to the last commit)
+- modified (there have been changes since the last commit)
+- staged (the changes that have been made have been added to the staging area)
+- committed (the changes made that have been added to the staging area have been committed to a commit)
+  
+Thus, we have a total of 5 file states:
+- untracked (Git doesn't know about the file)
+- unmodified (in reference to the last commit, there have been no changes)
+- modified (there have been changes since the last commit)
+- staged (the changes that have been made have been added to the staging area)
+- committed (the changes made that have been added to the staging area have been committed to a commit)
+Notice that unmodified and committed are the same thing, just in respect to different commits.
+The unmodified file of the last commit is the committed file of the commit before that.
+
+Add operation on untracked file                               -> staged file
+Edit operating on unmodified file                             -> modified file 
+Revert operation on modified file                             -> unmodified file                      git checkout -- OR git restore
+Add operation on modified file                                -> staged file                          git add
+Remove operation on all staged files                          -> unmodified files                     git reset HEAD 
+Commit operation on staged file                               -> committed file / unmodified file     git commit
+Combine Add and Commit operation untracked or modified file   -> committed file / unmodified file     git commit -a
+Remove operation on staged file                               -> modified file                        git rm --cached OR git restore --staged 
+Remove operation on staged file                               -> no file                              git rm
+Move operation on a file                                      -> new file                             git mv 
+Amend operation on staged file                                -> redo committed file                  git commit --amend
+
+
+We can check the status of files: git status
+This shows:
+- the current branch.
+- up-to-do with origin/master
+- what needs to be commit and the status of the working tree
+
+A shortened version: git status --short or git status -s
+
+Example:
+  git status -s
+    M README             # the file README has been modified and added to the staging area
+    MM Rakefile          # the file Rakefile has been modified and added to the staging area then modified again (the left and right columns, respectively)
+    A  lib/git.rb        # the file lib/git.rb has been added to the staging area after no being previously tracked
+    M  lib/simplegit.rb  # the file lib/simplegit.rb has been modified and added to the staging area
+    ?? LICENSE.txt       # the file LICENSE.txt is untracked
+
+We can ignore a class of files automatically by adding the file listing patterns into the file .gitignore inside our git repository.
+This specificies which untracked files you want to ignore. (Yes, if .gitignore is untracked you can add .gitignore to .gitignore and it will be excluded from Git's messaging)
+
+The rules for the patterns you can put in the .gitignore file are as follows:
+- Blank lines or lines starting with # are ignored.
+- Standard glob patterns work, and will be applied recursively throughout the entire working tree.
+- You can start patterns with a forward slash (/) to avoid recursivity.
+- You can end patterns with a forward slash (/) to specify a directory.
+- You can negate a pattern by starting it with an exclamation point (!).
+
+In order to see the exact lines that were added and removed (the patch): git diff
+We can also see what is staged into our next commit: git diff --staged
+
+Unmodified -> Modified are seen with: git diff
+Unmodified -> Staged   are seen with: git diff --staged or its synonym git diff --cached
+
+We can view the Git commit history: git log
+To see the changes with each commit add the option --patch or -p: git log -p
+To limit the number of commits displayed to n: git log -n
+To view abbreviated stats (information like list of modified files, how many files were changed, and lines added and removed) for each commit: git log --stat
+To format log's output: git log --pretty=oneline
+The options for pretty are:
+  - oneline
+  - short
+  - full
+  - fuller
+  - format, which as more indepth options.
+There is another graph option which shows a nice little ASCII graph of our branch and merge history: git log --graph
+There are also time limiting options for git log.
+Another helpful filer, find the number of times that the number of occurances of a string has been changed: git log -S string
+Example:
+  git log -S function # shows the commits where the number of references changes
+This last filter, find commits that had change to the file specified: git log -- path/to/file
+You can also add the option --no-merges to get rid of commits that are merges: git log --no-merges
+
+In order to collaborate in Git, you need to be able to manage remote repositories.
+These remote repositories are abstractions that manage connecting to other computers and their git repositories.
+
+Cloning a repository sets it up a remote repository called origin (the origin repository).
+It also sets up the local master to track the origin master branch. 
+You can show the remote repositories: git remote 
+You can see the URLs of the shortname that are used for reading and writing: git remote -v
+Reading is done using fetch.
+Writing is done using push.
+You can a remote repository: git remote add branch url
+You can fetch all the repository history: git fetch branch
+However, this is now on our computer it is under the remote's name and branches -- they aren't automatically merged.
+If your current branch is setup to track a remote branch, you can fetch and merge that remote branch into your current branch in one step: git pull
 
 
 ## 3. Git Branching
