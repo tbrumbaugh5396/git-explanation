@@ -6,7 +6,7 @@ I will be using this project as a personal Git reference-guide.
 
 # Table of Contents
 * [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
-* [Table of Contents](#Table-of-Contents)
+* [Table of Contents](#Table-of-Content
 * [Git Introduction](#Git-Introduction)
 * [Notes on the Book \"Pro Git\"](#Notes-on-the-Book-Pro-Git)
   * [1. Getting Started](#1-Getting-Started)
@@ -18,18 +18,18 @@ I will be using this project as a personal Git reference-guide.
     * [1.6 First-Time Git Setup](#16-Getting-Started---First-Time-Git-Setup)
     * [1.7 Getting Help](#17-Getting-Started---Getting-Help)
     * [1.8 Summary](#18-Getting-Started---Summary)
-    * [1. My Notes](#1-My-Notes)
+    * [My Notes on 1.](#My-Notes-on-1)
   * [2. Git Basics](#2-Git-Basics)
-    * [2.1 Getting a Git Repository](#)
-    * [2.2 Recording Changes to the Repository](#)
-    * [2.3 Viewing the Commit History](#)
-    * [2.4 Undoing Things](#)
-    * [2.5 Working with Remotes](#)
-    * [2.6 Tagging](#)
-    * [2.7 Git Aliases](#)
-    * [2.8 Summary](#)
-    * [2. My Notes](#2-My-Notes)
-  * [3. Git Branching](#)
+    * [2.1 Getting a Git Repository](#21-Git-Basics---Getting-a-Git-Repository)
+    * [2.2 Recording Changes to the Repository](#22-Git-Basics---Recording-Changes-to-the-Repository)
+    * [2.3 Viewing the Commit History](#23-Git-Basics---Viewing-the-Commit-History)
+    * [2.4 Undoing Things](#24-Git-Basics---Undoing-Things)
+    * [2.5 Working with Remotes](#25-Git-Basics---Working-with-Remotes)
+    * [2.6 Tagging](#26-Git-Basics---Tagging)
+    * [2.7 Git Aliases](#27-Git-Basics---Git-Aliases)
+    * [2.8 Summary](#28-Git-Basics---Summary)
+    * [My Notes on 2.](#My-Notes-on-2)
+  * [3. Git Branching](#3-Git-Branching)
     * [3.1 Branches in a Nutshell](#)
     * [3.2 Basic Branching and Merging](#)
     * [3.3 Branch Management](#)
@@ -37,19 +37,19 @@ I will be using this project as a personal Git reference-guide.
     * [3.5 Remote Branches](#)
     * [3.6 Rebasing](#)
     * [3.7 Summary](#)
-    * [3. My Notes](#3-My-Notes)
-  * [4. Git on the Server](#)
-    * [4.1 The Protocols](#)
-    * [4.2 Getting Git on a Server](#)
-    * [4.3 Generating Your SSH Public Key](#)
-    * [4.4 Setting Up the Server](#)
-    * [4.5 Git Daemon](#)
-    * [4.6 Smart HTTP](#)
-    * [4.7 GitWeb](#)
-    * [4.8 GitLab](#)
-    * [4.9 Third Party Hosted Options](#)
-    * [4.10 Summary](#)
-    * [4. My Notes](#4-My-Notes)
+    * [My Notes on 3.](#My-Notes-on-3)
+  * [4. Git on the Server](#4-Git-on-the-Server)
+    * [4.1 The Protocols](#41-Git-on-the-Server---The-Protocols)
+    * [4.2 Getting Git on a Server](#42-Git-on-the-Server---Getting-Git-on-a-Server)
+    * [4.3 Generating Your SSH Public Key](#43-Git-on-the-Server---Generating-Your-SSH-Public-Key)
+    * [4.4 Setting Up the Server](#44-Git-on-the-Server---Setting-Up-the-Server)
+    * [4.5 Git Daemon](#45-Git-on-the-Server---Git-Daemon)
+    * [4.6 Smart HTTP](#46-Git-on-the-Server---Smart-HTTP)
+    * [4.7 GitWeb](#47-Git-on-the-Server---GitWeb)
+    * [4.8 GitLab](#48-Git-on-the-Server---GitLab)
+    * [4.9 Third Party Hosted Options](#49-Git-on-the-Server---Third-Party-Hosted-Options)
+    * [4.10 Summary](#410-Git-on-the-Server---Summary)
+    * [My Notes on 4.](#My-Notes-on-4)
   * [5. Distributed Git](#)
     * [5.1 Distributed Workflows](#)
     * [5.2 Contributing to a Project](#)
@@ -451,7 +451,7 @@ Additionally, if you don't need a full-blown manpage for help but just a quick r
 ### 1.8 Getting Started - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 1. My Notes
+### My Notes on 1.
 [Table of Contents](#Table-of-Contents)
 
 ### 2. Git Basics
@@ -1084,7 +1084,7 @@ Now we know how to do all the basic local Git operations - creating or cloning a
 
 Next, we will learn about Git's most killer feature: its branching model.
 
-### 2. My Notes
+### My Notes on 2.
 [Table of Contents](#Table-of-Contents)
 
 ## 3. Git Branching
