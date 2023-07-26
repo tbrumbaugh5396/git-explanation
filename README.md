@@ -116,24 +116,24 @@ I will be using this project as a personal Git reference-guide.
       * [A1.8 Git in PowerShell](#A18-Appendix-A---Git-in-PowerShell)
       * [A1.9 Summary](#A19-Appendix-A---Summary)
     * [A2. Appendix B: Embedding Git in your Applications](#A2-Appendix-B---Embedding-Git-in-your-Applications)
-      * [A2.1 Command-line Git](#A2-Appendix-B---Command-line-Git)
-      * [A2.2 Libgit2](#A2-Appendix-B---Libgit2)
-      * [A2.3 JGit](#A2-Appendix-B---JGit)
-      * [A2.4 go-git](#A2-Appendix-B---go-git)
-      * [A2.5 Dulwich](#A2-Appendix-B---Dulwich)
+      * [A2.1 Command-line Git](#A21-Appendix-B---Command-line-Git)
+      * [A2.2 Libgit2](#A22-Appendix-B---Libgit2)
+      * [A2.3 JGit](#A23-Appendix-B---JGit)
+      * [A2.4 go-git](#A24-Appendix-B---go-git)
+      * [A2.5 Dulwich](#A25-Appendix-B---Dulwich)
     * [A3. Appendix C: Git Commands](#A3-Appendix-C---Git-Commands)
-      * [A3.1 Setup and Config](#A3-Appendix-C---Setup-and-Config)
-      * [A3.2 Getting and Creating Projects](#A3-Appendix-C---Getting-and-Creating-Projects)
-      * [A3.3 Basic Snapshotting](#A3-Appendix-C---Basic-Snapshotting)
-      * [A3.4 Branching and Merging](#A3-Appendix-C---Branching-and-Merging)
-      * [A3.5 Sharing and Updating Projects](#A3-Appendix-C---Sharing-and-Updating-Projects)
-      * [A3.6 Inspection and Comparison](#A3-Appendix-C---Inspection-and-Comparison)
-      * [A3.7 Debugging](#A3-Appendix-C---Debugging)
-      * [A3.8 Patching](#A3-Appendix-C---Patching)
-      * [A3.9 Email](#A3-Appendix-C---Email)
-      * [A3.10 External Systems](#A3-Appendix-C---External-Systems)
-      * [A3.11 Administration](#A3-Appendix-C---Administration)
-      * [A3.12 Plumbing Commands](#A3-Appendix-C---Plumbing-Commands)
+      * [A3.1 Setup and Config](#A31-Appendix-C---Setup-and-Config)
+      * [A3.2 Getting and Creating Projects](#A32-Appendix-C---Getting-and-Creating-Projects)
+      * [A3.3 Basic Snapshotting](#A33-Appendix-C---Basic-Snapshotting)
+      * [A3.4 Branching and Merging](#A34-Appendix-C---Branching-and-Merging)
+      * [A3.5 Sharing and Updating Projects](#A35-Appendix-C---Sharing-and-Updating-Projects)
+      * [A3.6 Inspection and Comparison](#A36-Appendix-C---Inspection-and-Comparison)
+      * [A3.7 Debugging](#A37-Appendix-C---Debugging)
+      * [A3.8 Patching](#A38-Appendix-C---Patching)
+      * [A3.9 Email](#A39-Appendix-C---Email)
+      * [A3.10 External Systems](#A310-Appendix-C---External-Systems)
+      * [A3.11 Administration](#A311-Appendix-C---Administration)
+      * [A3.12 Plumbing Commands](#A312-Appendix-C---Plumbing-Commands)
     * [My Notes on Appendix](#My-Notes-on-Appendix)
 * [Reference\'s](#References)
 
@@ -198,7 +198,7 @@ B -- C -- D
 RCS was a popular VCS which is distributed.
 RCS works by keeping patch sets (ie difference between files) in a special format on disk that can then be able to re-create what any file looked like at any point in time by adding up all the patches.
 
-##### Centralized Version Control Systems
+#### Centralized Version Control Systems
 People encountered the problem of collaborating with developers on other systems.
 To solve this problem, Centralized Version Control Systems (CVCSs) were developed.
 These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files, and a number of clients that check out files from that central location.
