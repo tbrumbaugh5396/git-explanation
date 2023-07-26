@@ -134,7 +134,7 @@ I will be using this project as a personal Git reference-guide.
       * [A3.10 External Systems](#A3-Appendix-C---External-Systems)
       * [A3.11 Administration](#A3-Appendix-C---Administration)
       * [A3.12 Plumbing Commands](#A3-Appendix-C---Plumbing-Commands)
-  * [My Notes on Appendix](#My-Notes-on-Appendix)
+    * [My Notes on Appendix](#My-Notes-on-Appendix)
 * [Reference\'s](#References)
 
 # Git Introduction
