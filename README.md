@@ -1273,6 +1273,7 @@ You can see all tags:
 - git tag
 - git tag -l
 - git tag --list
+
 You can see tags that match a pattern: git tag -l "v1.*"
 Creating lightweight tags: git tag v1-lw
 Creating annotated tags: git tag -a v1
@@ -1280,9 +1281,11 @@ See the git commit a tag points to: git show v1-lw
 You can share a tag remotely: git push <remote> <tag-name>
 You can share all tags: git push <remote> --tags
 Deleting a tag: git tag -d v1-lw
+
 Deleting a remote server's tag:
 - git push <remote> :refs/tags/<tag-name>
 - git push origin --delete <tag-name>
+
 How to get the files in the working directory from the commit of the tag: git checkout <tag-name>
 However, this puts in a detached HEAD state.
 If you commit the tag will stay the same, but your new commit won't belong to any branch and will be unreachable except by commit hash.
