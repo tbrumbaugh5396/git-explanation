@@ -109,7 +109,7 @@ I will be using this project as a personal Git reference-guide.
       * [A1.1 Graphical Interfaces](#A11-Appendix-A---Graphical-Interfaces)
       * [A1.2 Git in Visual Studio](#A12-Appendix-A---Git-in-Visual-Studio)
       * [A1.3 Git in Visual Studio Code](#A13-Appendix-A---Git-in-Visual-Studio-Code)
-      * [A1.4 Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine](#A14-Appendix-A---Git-in-IntelliJ-/-PyCharm-/-WebStorm-/-PhpStorm-/-RubyMine)
+      * [A1.4 Git in IntelliJ / PyCharm / WebStorm / PhpStorm / RubyMine](#A14-Appendix-A---Git-in-IntelliJ--PyCharm--WebStorm--PhpStorm--RubyMine)
       * [A1.5 Git in Sublime Text](#A15-Appendix-A---Git-in-Sublime-Text)
       * [A1.6 Git in Bash](#A16-Appendix-A---Git-in-Bash)
       * [A1.7 Git in Zsh](#A17-Appendix-A---Git-in-Zsh)
