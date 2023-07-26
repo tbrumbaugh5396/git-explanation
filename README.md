@@ -341,7 +341,7 @@ If you understand how to use the command-line version of Git you should be able 
 
 ### 1.5 Getting Started - Installing Git
 [Table of Contents](#Table-of-Contents)
-Table of Conte
+
 Before you can use Git, you must make sure it is available on your computer.
 
 There are different steps to installing Git on Linux, MacOS, Windows, or installing from Source.
@@ -1609,10 +1609,11 @@ Now, we should feel comfortable switching branches, merging local branches toget
 You should be able to share your branches by pushing them to a shared server, working with others on shared branches and rebasing your branches before they are shared.
 Next, we will cover what is needed to run your own Git repository-hosting server.
 
-### 3. My Notes
+### My Notes on 3.
 [Table of Contents](#Table-of-Contents)
 
 ## 4.1 Git on the Server
+[Table of Contents](#Table-of-Contents)
 
 ### 4.1 Git on the Server - The Protocols
 [Table of Contents](#Table-of-Contents)
@@ -1825,7 +1826,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 4.10 Git on the Server - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 4. My Notes
+### My Notes on 4. 
 [Table of Contents](#Table-of-Contents)
 
 ## 5 Distributed Git
@@ -1843,7 +1844,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 5.4 Distributed Git - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 5. My Notes
+### My Notes on 5.
 [Table of Contents](#Table-of-Contents)
 
 ### 6.1 GitHub - Account Setup and Configuration
@@ -1864,7 +1865,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 6.6 GitHub - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 6. My Notes
+### My Notes on 6.
 [Table of Contents](#Table-of-Contents)
 
 ### 7.1 Git Tools - Revision Selection
@@ -1912,7 +1913,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 7.15 Git Tools - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 7. My Notes
+### My Notes on 7. 
 [Table of Contents](#Table-of-Contents)
 
 ### 8.1 Customizing Git - Git Configuration
@@ -1930,7 +1931,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 8.5 Customizing Git - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 8. My Notes
+### My Notes on 8. 
 [Table of Contents](#Table-of-Contents)
 
 ### 9.1 Git and Other Systems - Git as a Client
@@ -1942,7 +1943,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 9.3 Git and Other Systems - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 9. My Notes
+### My Notes on 9. 
 [Table of Contents](#Table-of-Contents)
 
 ### 10.1 Git Internals - Plumbing and Porcelain
@@ -1972,7 +1973,7 @@ Otherwise, you can use a LDAP server or some authentication source so that users
 ### 10.9 Git Internals - Summary
 [Table of Contents](#Table-of-Contents)
 
-### 10. My Notes
+### My Notes on 10. 
 [Table of Contents](#Table-of-Contents)
 
 ### A1 Appendix A: Git in Other
