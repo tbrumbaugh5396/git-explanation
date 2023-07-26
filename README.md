@@ -203,12 +203,12 @@ graph TD;
 ```
 
 ```mermaid
-graph LR
-A[File] -- Local Version Control --> B(Version 1)
-A --> C(Version 2)
-A --> D(Version 3)
+graph LR;
+A[File] -- Local Version Control --> B(Version 1);
+A --> C(Version 2);
+A --> D(Version 3);
 
-B -- C -- D
+B -- C -- D;
 ```
 
 RCS was a popular VCS which is distributed.
@@ -221,13 +221,13 @@ These systems (such as CVS, Subversion, and Perforce) have a single server that 
 Centralized Version Control had been the standard.
 
 ```mermaid
-graph LR
-A[File On Computer A] -- Local Version Control --> C(Version 1)
-B[File On Computer B] --> C 
-A --> D(Version 2)
-A --> E(Version 3)
+graph LR;
+A[File On Computer A] -- Local Version Control --> C(Version 1);
+B[File On Computer B] --> C;
+A --> D(Version 2);
+A --> E(Version 3);
 
-C -- D -- E
+C -- D -- E;
 ```
 
 ##### Distributed Version Control Systems
@@ -240,20 +240,20 @@ Essentially, every node is a full mirror of the repository with its full history
 Thus, each node is a fully redundent repository.
 
 ```mermaid
-graph LR
-A[File On Computer A] -- Local Version Control --> B(Computer A Version 1)
-A --> C(Computer A Version 2)
-A --> D(Computer A Version 3)
+graph LR;
+A[File On Computer A] -- Local Version Control --> B(Computer A Version 1);
+A --> C(Computer A Version 2);
+A --> D(Computer A Version 3);
 
-E[File On Computer B] -- Local Version Control --> F(Computer B Version 1)
-E --> G(Computer B Version 2)
-E --> H(Computer B Version 3)
+E[File On Computer B] -- Local Version Control --> F(Computer B Version 1);
+E --> G(Computer B Version 2);
+E --> H(Computer B Version 3);
 
-I(Server Computer Version 1)
-I --> J(Server Computer Version 2)
-I --> K(Server Computer Version 3)
+I(Server Computer Version 1);
+I --> J(Server Computer Version 2);
+I --> K(Server Computer Version 3);
 
-A -- E -- I
+A -- E -- I;
 ```
 
 Many of these systems deal well with having several remote repositories they can work with, so you can collaborate with different groups of people in different ways simultaneously within the same project.
