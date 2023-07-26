@@ -4,6 +4,13 @@
 The purpose of this project and repository is to help explain what the tool Git is.
 I will be using this project as a personal Git reference-guide. 
 
+```graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 # Table of Contents
 * [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
 * [Table of Contents](#Table-of-Content)
