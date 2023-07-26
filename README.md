@@ -203,7 +203,7 @@ graph TD;
 ```
 
 ```mermaid
-graph LR;
+graph TD;
 A[File] --> B(Version 1);
 A --> C(Version 2);
 A --> D(Version 3);
