@@ -1221,6 +1221,9 @@ In software development, a README file contains information about the other file
 | %cd       | Committer date                                  |
 | %cr       | Committer date, relative                        |
 | %s	       | Subject                                         |
+The author is the person who originally wrote the code.
+The committer, on the other hand, is assumed to be the person who committed the code on behalf of the original author.
+You can commit on behalf of someone else with options on the commit command.
   
 There is another graph option which shows a nice little ASCII graph of our branch and merge history: git log --graph
 There are also time limiting options for git log.
