@@ -89,7 +89,7 @@ I will be using this project as a personal Git reference-guide.
     * [8.5 Summary](#85-Customizing-Git---Summary)
     * [My Notes on 8.](#My-Notes-on-8)
   * [9. Git and Other Systems](#9-Git-and-Other-Systems)
-    * [9.1 Git as a Client](#92-Git-and-Other-Systems---Git-as-a-Client)
+    * [9.1 Git as a Client](#91-Git-and-Other-Systems---Git-as-a-Client)
     * [9.2 Migrating to Git](#92-Git-and-Other-Systems---Migrating-to-Git)
     * [9.3 Summary](#93-Git-and-Other-Systems---Summary)
     * [My Notes on 9.](#My-Notes-on-9)
