@@ -222,12 +222,11 @@ Centralized Version Control had been the standard.
 
 ```mermaid
 graph LR;
-A[File On Computer A] --> C(Version 1);
-B[File On Computer B] --> C;
-A --> D(Version 2);
-A --> E(Version 3);
-
-C -- D -- E;
+    A[File On Computer A]-->C(Version 1);
+    B[File On Computer B]-->C;
+    A-->D(Version 2);
+    A-->E(Version 3);
+    C-->D-->E;
 ```
 
 ##### Distributed Version Control Systems
