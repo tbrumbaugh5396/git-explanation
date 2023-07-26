@@ -6,7 +6,7 @@ I will be using this project as a personal Git reference-guide.
 
 # Table of Contents
 * [Git Explanation\'s Purpose](#Git-Explanations-Purpose)
-* [Table of Contents](#Table-of-Content
+* [Table of Contents](#Table-of-Content)
 * [Git Introduction](#Git-Introduction)
 * [Notes on the Book \"Pro Git\"](#Notes-on-the-Book-Pro-Git)
   * [1. Getting Started](#1-Getting-Started)
