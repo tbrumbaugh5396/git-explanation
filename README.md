@@ -177,7 +177,7 @@ VCS allow you to:
 - who introduced an issue and when,
 - more
 
-##### Local Version Control Systems
+#### Local Version Control Systems
 Many people already version control by copying files to another directory (perhaps a time-stamped directory ;) ). 
 This approach is very common because it is so simple, however it is very error prone. 
 You can forget which directory you are in and accidentally write the wrong file or copy over files you didn't mean to.
