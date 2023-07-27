@@ -1,0 +1,8 @@
+# setup .gitconfig for the entire computer
+git config --global -e
+
+# setup .gitconfig for the user
+git config --system -e
+
+# setup .gitconfig for the local (current) repository
+git config --local -e
