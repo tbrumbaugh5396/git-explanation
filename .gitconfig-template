@@ -32,7 +32,6 @@ view-commit-history = log
 view-commit-history-with-patches = log --patch # or log -p
 # there are more logging information that can be added.
 
-
 # remote repository related
 view-remote-repositories = remote
 view-remote-repositories-and-their-URLs = remote -v
@@ -56,9 +55,28 @@ delete-tag-from-remote-repository = "!git push \"$1\"^ --delete \"$2\"^ #" # wit
 
 # checkout
 put-the-commit-the-tag-points-to-into-working-tree = checkout                         # with <tag-name>
-put-the-commit-the-tag-points-to-into-working-tree-and-make-it-a-branch = checkout -b # with <branch> <tag-name>
+put-the-commit-the-branch-points-to-into-the-working-tree = checkout                  # with <branch-name> or switch
+create-a-new-branch-and-switch-to-it = checkout -b                                    # with <branch-name>
+put-the-commit-the-tag-points-to-into-working-tree-and-make-it-a-branch = checkout -b # with <branch-name> <tag-name>
 
+# branch related
+create-new-branch = branch                                                 # with <branch-name>
+view-all-branches = branch --all
+delete-branch = branch -d
+force-delete-branch = branch -D
+rename-branch = branch --move  
+view-all-merged-branches-with-our-current-branch = branch --merged
+view-all-non-merged-branches-with-our-current-branch = branch --no-merged
+show-corrected-branch-on-remote-repository = "!git push --set-upstream \"$1\"^ --delete \"$2\"^ #"
+delete-branch-on-remote-repository = "!git push \"$1\"^ --delete \"$2\"^ #" # with <remote-repository-name> <branch-name>
 
+# remote reference
+show-remote-repository-references = ls-remote
+update-all-remote-repositories = fetch --all
+view-all-up-to-date-branches = git fetch --all; git branch -vv
+
+# track branch
+track-remote-repository-branch-with-current-branch = "!git checkout --track \"$1\"^/\"$2\"^ #"
 
 ########### Checkout https://gist.github.com/pksunkara/988716 for more .gitconfig settings #[core]
 ## editor = nvim
