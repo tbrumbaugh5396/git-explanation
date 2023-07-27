@@ -5,10 +5,10 @@
 [init]
   defaultBranch = master
 [alias]
-list-settings = git config --list
-check-variable = git config # needs to add a key-value
-where-does-variable-come-from = git config --show-origin                  # needs to add a key-value
-get-all-git-commands = git help -a
+list-settings = config --list
+check-variable = config # needs to add a key-value
+where-does-variable-come-from = config --show-origin                  # needs to add a key-value
+get-all-git-commands = help -a
 config-for-entire-computer = config --system -e
 config-for-user = config --global -e
 config-for-local-repository = config --local -e
