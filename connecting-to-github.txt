@@ -1,0 +1,17 @@
+# You can connect to a git repository
+# First, generate a ssh key to connect to github
+ssh-keygen -t ed25519 -C "thomas.william.brumbaugh@gmail.com"
+
+# add ssh key ~/.ssh/id_ed25519.pub to git
+
+# See if ssh connects to github
+ssh -T git@github.com
+
+# create new repository on github by pressing button
+  
+# add the git remote
+git remote add github git@github.com:tbrumbaugh5396/git-repository.git
+
+# push branches to github's remote repository
+git push github master
+  
