@@ -20,3 +20,10 @@ environment.systemPackages = with pkgs; [
 
 # Enable the OpenSSH daemon for ssh.
 services.openssh.enable = true;
+
+########################## Seperate from the configuration.nix ###################################
+# Since our git user is supposed to use the git shell
+Downloaded the git-shell-commands repository and put them into /srv/git.
+Additionally, i had to get the argument-parser and the trap-failure.
+git-shell-commands/help: line 14: /srv/git/git-shell-commands/shared_functions/modules/trap-failure/failure.sh: No such file or directory
+git-shell-commands/help: line 18: /srv/git/git-shell-commands/shared_functions/modules/argument-parser/argument-parser.sh: No such file or directory
