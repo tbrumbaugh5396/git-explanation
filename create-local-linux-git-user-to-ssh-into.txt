@@ -1,0 +1,18 @@
+# For NixOS: add git user to configuration.nix 
+# Definition for a git user account to hold my git repositories from: https://terinstock.com/post/2021/01/Setting-up-a-git-server-on-NixOS/
+# added git-shell-commands from https://github.com/git-utilities/git-shell-commands to /srv/git/
+# added modules argument parser from https://github.com/bash-utilities/argument-parser and trap failure from https://github.com/bash-utilities/trap-failure into the shared_functions directory
+users.users.git = {
+  isSystemUser = true;
+  description = "git user";
+  home = "/srv/git";
+  #extraGroups = [ ];
+  group = "git";
+  shell = "${pkgs.git}/bin/git-shell";};
+
+# For NixOS: add git group to configuration.nix
+users.groups.git = { };
+
+# Add the git package to configuration.nix 
+environment.systemPackages = with pkgs; [
+  git];
