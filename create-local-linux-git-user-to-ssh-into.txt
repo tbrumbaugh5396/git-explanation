@@ -15,4 +15,8 @@ users.groups.git = { };
 
 # Add the git package to configuration.nix 
 environment.systemPackages = with pkgs; [
-  git];
+  git
+  openssh];
+
+# Enable the OpenSSH daemon for ssh.
+services.openssh.enable = true;
